@@ -91,7 +91,7 @@ jobs:
           echo "current_version=$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Build target package
-        run: bunx turbo run build --filter=${{ steps.pkg.outputs.name }}
+        run: bunx turbo run build --filter=${{ steps.pkg.outputs.name }} --force
 
       - name: Bump package version
         id: bump
