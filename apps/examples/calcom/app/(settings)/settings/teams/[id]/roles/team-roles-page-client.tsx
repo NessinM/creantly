@@ -1,19 +1,19 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@nesscom/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
-import { Checkbox } from "@coss/ui/components/checkbox";
+} from "@nesscom/ui/components/card";
+import { Checkbox } from "@nesscom/ui/components/checkbox";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@coss/ui/components/collapsible";
+} from "@nesscom/ui/components/collapsible";
 import {
   Drawer,
   DrawerClose,
@@ -22,9 +22,12 @@ import {
   DrawerPanel,
   DrawerPopup,
   DrawerTitle,
-} from "@coss/ui/components/drawer";
-import { Label } from "@coss/ui/components/label";
-import { ToggleGroup, ToggleGroupItem } from "@coss/ui/components/toggle-group";
+} from "@nesscom/ui/components/drawer";
+import { Label } from "@nesscom/ui/components/label";
+import {
+  ToggleGroup,
+  ToggleGroupItem,
+} from "@nesscom/ui/components/toggle-group";
 import { ChevronDownIcon, PlusIcon } from "lucide-react";
 import { useCallback, useId, useState } from "react";
 import {
