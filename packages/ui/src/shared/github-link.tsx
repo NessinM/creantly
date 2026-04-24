@@ -1,8 +1,8 @@
+import { Button } from "@creantly/ui/components/button";
+import { Skeleton } from "@creantly/ui/components/skeleton";
+import { siteConfig } from "@creantly/ui/lib/config";
 import { GithubIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Button } from "@nesscom/ui/components/button";
-import { Skeleton } from "@nesscom/ui/components/skeleton";
-import { siteConfig } from "@nesscom/ui/lib/config";
 import Link from "next/link";
 import * as React from "react";
 

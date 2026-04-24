@@ -1,5 +1,5 @@
-import { Button } from "@nesscom/ui/components/button";
-import { Card, CardFrame, CardPanel } from "@nesscom/ui/components/card";
+import { Button } from "@creantly/ui/components/button";
+import { Card, CardFrame, CardPanel } from "@creantly/ui/components/card";
 import { PlusIcon } from "lucide-react";
 import { CalendarsEmpty } from "../calendars-empty";
 import {

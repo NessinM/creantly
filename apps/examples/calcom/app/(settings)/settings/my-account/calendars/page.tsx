@@ -1,4 +1,4 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -6,7 +6,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import { PlusIcon } from "lucide-react";
 import { CalendarsDemoForm } from "./calendars-demo-form";
 import { CheckForConflictsCard } from "./check-for-conflicts-card";

@@ -1,12 +1,12 @@
 "use client";
 
-import { Label } from "@nesscom/ui/components/label";
+import { Label } from "@creantly/ui/components/label";
 import {
   Popover,
   PopoverPopup,
   PopoverTrigger,
-} from "@nesscom/ui/components/popover";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/popover";
+import { Switch } from "@creantly/ui/components/switch";
 import type * as React from "react";
 import { useDebug } from "./debug-context";
 

@@ -1,4 +1,4 @@
-import { ScrollArea } from "@nesscom/ui/components/scroll-area";
+import { ScrollArea } from "@creantly/ui/components/scroll-area";
 import type * as React from "react";
 import type { Tab } from "@/components/app/tabbed-nav";
 import { TabbedNav } from "@/components/app/tabbed-nav";

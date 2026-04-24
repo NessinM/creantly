@@ -5,7 +5,7 @@
     "./react-library.json": "./react-library.json"
   },
   "license": "MIT",
-  "name": "@nesscom/typescript-config",
+  "name": "@creantly/typescript-config",
   "publishConfig": {
     "access": "public"
   },

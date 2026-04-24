@@ -1,19 +1,19 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
-import { Checkbox } from "@nesscom/ui/components/checkbox";
+} from "@creantly/ui/components/card";
+import { Checkbox } from "@creantly/ui/components/checkbox";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@nesscom/ui/components/collapsible";
+} from "@creantly/ui/components/collapsible";
 import {
   Drawer,
   DrawerClose,
@@ -22,12 +22,12 @@ import {
   DrawerPanel,
   DrawerPopup,
   DrawerTitle,
-} from "@nesscom/ui/components/drawer";
-import { Label } from "@nesscom/ui/components/label";
+} from "@creantly/ui/components/drawer";
+import { Label } from "@creantly/ui/components/label";
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@nesscom/ui/components/toggle-group";
+} from "@creantly/ui/components/toggle-group";
 import { ChevronDownIcon, PlusIcon } from "lucide-react";
 import { useCallback, useId, useState } from "react";
 import {

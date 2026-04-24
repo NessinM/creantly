@@ -4,16 +4,16 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/avatar";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import {
   Menu,
   MenuCheckboxItem,
@@ -22,13 +22,13 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/menu";
+import { Switch } from "@creantly/ui/components/switch";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
+} from "@creantly/ui/components/tooltip";
 import { EllipsisIcon, PencilIcon, TrashIcon, WebhookIcon } from "lucide-react";
 import { useState } from "react";
 import {

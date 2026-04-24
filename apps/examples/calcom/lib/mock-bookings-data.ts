@@ -536,7 +536,7 @@ export const mockPastBookings: Booking[] = [
     ],
     createdAt: new Date("2025-10-05T10:00:00"),
     description:
-      "Planning session for the @nesscom/ui component library migration.",
+      "Planning session for the @creantly/ui component library migration.",
     endTime: new Date("2025-10-10T17:30:00"),
     eventType: {
       ...defaultEventType,
@@ -556,7 +556,7 @@ export const mockPastBookings: Booking[] = [
     rescheduled: false,
     startTime: new Date("2025-10-10T17:00:00"),
     status: "ACCEPTED",
-    title: "@nesscom/ui migration",
+    title: "@creantly/ui migration",
     uid: "abc123-booking-6",
     updatedAt: new Date("2025-10-05T10:00:00"),
     user: userPasquale,

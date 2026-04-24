@@ -2,7 +2,7 @@ import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
-} from "@nesscom/ui/shared/page-header";
+} from "@creantly/ui/shared/page-header";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { isValidRegistryCategory } from "@/registry/registry-categories";

@@ -5,12 +5,12 @@
     "esModuleInterop": true,
     "paths": {
       "@/*": ["./*"],
-      "@nesscom/ui/*": ["../../packages/ui/src/*"],
+      "@creantly/ui/*": ["../../packages/ui/src/*"],
       "@source/*": ["./.source/*"]
     }
   },
   "exclude": ["node_modules"],
-  "extends": "@nesscom/typescript-config/nextjs.json",
+  "extends": "@creantly/typescript-config/nextjs.json",
   "include": [
     "next-env.d.ts",
     "next.config.ts",

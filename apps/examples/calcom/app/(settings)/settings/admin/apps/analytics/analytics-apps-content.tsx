@@ -8,9 +8,9 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@nesscom/ui/components/alert-dialog";
-import { Button } from "@nesscom/ui/components/button";
-import { Card, CardPanel } from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/alert-dialog";
+import { Button } from "@creantly/ui/components/button";
+import { Card, CardPanel } from "@creantly/ui/components/card";
 import {
   Dialog,
   DialogClose,
@@ -19,30 +19,30 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@nesscom/ui/components/dialog";
+} from "@creantly/ui/components/dialog";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@nesscom/ui/components/empty";
-import { Field, FieldLabel } from "@nesscom/ui/components/field";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/empty";
+import { Field, FieldLabel } from "@creantly/ui/components/field";
+import { Input } from "@creantly/ui/components/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@nesscom/ui/components/input-group";
-import { ScrollArea } from "@nesscom/ui/components/scroll-area";
-import { Switch } from "@nesscom/ui/components/switch";
-import { toastManager } from "@nesscom/ui/components/toast";
+} from "@creantly/ui/components/input-group";
+import { ScrollArea } from "@creantly/ui/components/scroll-area";
+import { Switch } from "@creantly/ui/components/switch";
+import { toastManager } from "@creantly/ui/components/toast";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
-import { useMediaQuery } from "@nesscom/ui/hooks/use-media-query";
+} from "@creantly/ui/components/tooltip";
+import { useMediaQuery } from "@creantly/ui/hooks/use-media-query";
 import {
   BarChart3Icon,
   CalendarIcon,

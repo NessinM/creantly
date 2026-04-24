@@ -1,7 +1,7 @@
 "use client";
 
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
 import {
   Menu,
   MenuCheckboxItem,
@@ -10,13 +10,13 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
+} from "@creantly/ui/components/menu";
 import {
   Popover,
   PopoverPopup,
   PopoverTrigger,
-} from "@nesscom/ui/components/popover";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/popover";
+import { Switch } from "@creantly/ui/components/switch";
 import { EllipsisIcon, InfoIcon, PencilIcon, TrashIcon } from "lucide-react";
 import type { DelegationCredentialItem } from "./delegation-credential-types";
 import {

@@ -1,9 +1,9 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
-} from "@nesscom/ui/shared/page-header";
+} from "@creantly/ui/shared/page-header";
 import { ArrowLeftIcon } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";

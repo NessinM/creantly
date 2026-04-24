@@ -1,11 +1,11 @@
 "use client";
 
-import { toastManager } from "@nesscom/ui/components/toast";
+import { toastManager } from "@creantly/ui/components/toast";
 import {
   ToggleGroup,
   ToggleGroupItem,
   ToggleGroupSeparator,
-} from "@nesscom/ui/components/toggle-group";
+} from "@creantly/ui/components/toggle-group";
 import { useState } from "react";
 import { SettingsToggle } from "@/components/particles";
 

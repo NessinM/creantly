@@ -1,7 +1,7 @@
 "use client";
 
-import { FieldItem, FieldLabel } from "@nesscom/ui/components/field";
-import { Radio, RadioGroup } from "@nesscom/ui/components/radio-group";
+import { FieldItem, FieldLabel } from "@creantly/ui/components/field";
+import { Radio, RadioGroup } from "@creantly/ui/components/radio-group";
 import Image from "next/image";
 import type { JSX } from "react";
 

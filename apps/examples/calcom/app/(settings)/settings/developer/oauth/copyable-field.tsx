@@ -1,22 +1,22 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@nesscom/ui/components/field";
+} from "@creantly/ui/components/field";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@nesscom/ui/components/input-group";
+} from "@creantly/ui/components/input-group";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
-import { useCopyToClipboard } from "@nesscom/ui/hooks/use-copy-to-clipboard";
+} from "@creantly/ui/components/tooltip";
+import { useCopyToClipboard } from "@creantly/ui/hooks/use-copy-to-clipboard";
 import { CheckIcon, CopyIcon } from "lucide-react";
 
 interface CopyableFieldProps {

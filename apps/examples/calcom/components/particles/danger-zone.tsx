@@ -1,11 +1,11 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   CardFrame,
   CardFrameDescription,
   CardFrameFooter,
   CardFrameHeader,
   CardFrameTitle,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import type { JSX } from "react";
 
 interface DangerZoneProps {

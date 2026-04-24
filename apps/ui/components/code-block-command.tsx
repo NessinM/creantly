@@ -1,12 +1,12 @@
 "use client";
 
+import { useCopyToClipboard } from "@creantly/ui/hooks/use-copy-to-clipboard";
 import {
   ComputerTerminal02Icon,
   Copy01Icon,
   Tick02Icon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { useCopyToClipboard } from "@nesscom/ui/hooks/use-copy-to-clipboard";
 import * as React from "react";
 import { Button } from "@/registry/default/ui/button";
 import { ScrollArea } from "@/registry/default/ui/scroll-area";

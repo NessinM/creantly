@@ -4,16 +4,16 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/avatar";
+import { Button } from "@creantly/ui/components/button";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@nesscom/ui/components/collapsible";
-import { Frame, FrameHeader, FramePanel } from "@nesscom/ui/components/frame";
-import { Input } from "@nesscom/ui/components/input";
-import { Label } from "@nesscom/ui/components/label";
+} from "@creantly/ui/components/collapsible";
+import { Frame, FrameHeader, FramePanel } from "@creantly/ui/components/frame";
+import { Input } from "@creantly/ui/components/input";
+import { Label } from "@creantly/ui/components/label";
 import {
   Sheet,
   SheetClose,
@@ -23,14 +23,14 @@ import {
   SheetPanel,
   SheetPopup,
   SheetTitle,
-} from "@nesscom/ui/components/sheet";
-import { Switch } from "@nesscom/ui/components/switch";
-import { toastManager } from "@nesscom/ui/components/toast";
+} from "@creantly/ui/components/sheet";
+import { Switch } from "@creantly/ui/components/switch";
+import { toastManager } from "@creantly/ui/components/toast";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
+} from "@creantly/ui/components/tooltip";
 import { ChevronDownIcon, UsersIcon } from "lucide-react";
 import { useMemo, useState } from "react";
 import {

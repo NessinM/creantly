@@ -6,9 +6,9 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
-import { Skeleton } from "@nesscom/ui/components/skeleton";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/card";
+import { Skeleton } from "@creantly/ui/components/skeleton";
+import { Switch } from "@creantly/ui/components/switch";
 import type * as React from "react";
 
 interface SettingsToggleProps {

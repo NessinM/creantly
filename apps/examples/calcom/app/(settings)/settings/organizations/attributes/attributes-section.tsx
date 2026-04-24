@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@nesscom/ui/components/alert-dialog";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/alert-dialog";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -17,7 +17,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import {
   Empty,
   EmptyContent,
@@ -25,7 +25,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@nesscom/ui/components/empty";
+} from "@creantly/ui/components/empty";
 import {
   Menu,
   MenuCheckboxItem,
@@ -34,9 +34,9 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { Switch } from "@nesscom/ui/components/switch";
-import { toastManager } from "@nesscom/ui/components/toast";
+} from "@creantly/ui/components/menu";
+import { Switch } from "@creantly/ui/components/switch";
+import { toastManager } from "@creantly/ui/components/toast";
 import {
   EllipsisIcon,
   PencilIcon,

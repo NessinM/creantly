@@ -1,12 +1,12 @@
 "use client";
 
-import { Field } from "@nesscom/ui/components/field";
-import { Fieldset } from "@nesscom/ui/components/fieldset";
+import { Field } from "@creantly/ui/components/field";
+import { Fieldset } from "@creantly/ui/components/fieldset";
 import {
   ToggleGroup,
   ToggleGroupItem,
   ToggleGroupSeparator,
-} from "@nesscom/ui/components/toggle-group";
+} from "@creantly/ui/components/toggle-group";
 import { useCallback, useState } from "react";
 import { ImageCheckboxOption } from "@/components/particles";
 

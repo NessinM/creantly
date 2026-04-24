@@ -14,7 +14,7 @@ coss is close to shadcn ergonomically, but its primitives and composition model 
 - Prefer coss component names and exports as documented (`DialogPopup`, `MenuPopup`, `SelectPopup`, etc.).
 - Some legacy aliases may exist, but primary coss names should be preferred in new examples.
 - Prefer styled coss exports by default (for example `Slider`, `SliderValue`) and use `*Primitive` only for advanced/custom composition.
-- When only Base UI helpers are needed (`useRender`, `mergeProps`, `CSPProvider`, `DirectionProvider`), prefer `@nesscom/ui/base-ui/*` re-exports over direct `@base-ui/react` dependency.
+- When only Base UI helpers are needed (`useRender`, `mergeProps`, `CSPProvider`, `DirectionProvider`), prefer `@creantly/ui/base-ui/*` re-exports over direct `@base-ui/react` dependency.
 - For Select migration, replace children-only option derivation with an `items`-first pattern where possible, then map options consistently in `SelectPopup`.
 - For OTP fields, migrate off the `input-otp` package to coss `@coss/otp-field`: rename components (`OTPField`, `OTPFieldInput`, `OTPFieldSeparator`), use `length` and `onValueChange`, and drop `InputOTPGroup` / slot `index` (see example below).
 

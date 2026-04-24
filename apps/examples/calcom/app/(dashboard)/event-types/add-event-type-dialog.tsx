@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Dialog,
   DialogClose,
@@ -11,21 +11,21 @@ import {
   DialogPopup,
   DialogTitle,
   DialogTrigger,
-} from "@nesscom/ui/components/dialog";
-import { Field, FieldLabel } from "@nesscom/ui/components/field";
-import { Form } from "@nesscom/ui/components/form";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/dialog";
+import { Field, FieldLabel } from "@creantly/ui/components/field";
+import { Form } from "@creantly/ui/components/form";
+import { Input } from "@creantly/ui/components/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
   InputGroupTextarea,
-} from "@nesscom/ui/components/input-group";
+} from "@creantly/ui/components/input-group";
 import {
   NumberField,
   NumberFieldInput,
-} from "@nesscom/ui/components/number-field";
-import { Toggle } from "@nesscom/ui/components/toggle";
+} from "@creantly/ui/components/number-field";
+import { Toggle } from "@creantly/ui/components/toggle";
 import { BoldIcon, ItalicIcon } from "lucide-react";
 
 export function AddEventTypeDialog({

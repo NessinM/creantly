@@ -6,11 +6,11 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "paths": {
-      "@nesscom/ui/*": ["./src/*"]
+      "@creantly/ui/*": ["./src/*"]
     },
     "types": ["next", "react", "node", "bun-types"]
   },
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"],
-  "extends": "@nesscom/typescript-config/react-library.json",
+  "extends": "@creantly/typescript-config/react-library.json",
   "include": ["."]
 }

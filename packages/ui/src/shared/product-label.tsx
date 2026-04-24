@@ -1,6 +1,6 @@
 "use client";
 
-import { Badge } from "@nesscom/ui/components/badge";
+import { Badge } from "@creantly/ui/components/badge";
 import { usePathname } from "next/navigation";
 
 interface ProductsDropdownProps {

@@ -2,8 +2,8 @@
 
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { type Button, buttonVariants } from "@nesscom/ui/components/button";
-import { cn } from "@nesscom/ui/lib/utils";
+import { type Button, buttonVariants } from "@creantly/ui/components/button";
+import { cn } from "@creantly/ui/lib/utils";
 import {
   ChevronLeftIcon,
   ChevronRightIcon,

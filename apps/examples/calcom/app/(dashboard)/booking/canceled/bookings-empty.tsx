@@ -6,7 +6,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@nesscom/ui/components/empty";
+} from "@creantly/ui/components/empty";
 import { CalendarIcon } from "lucide-react";
 import { BookingsListSkeleton } from "../booking-skeleton";
 import { useLoadingState } from "@/hooks/use-loading-state";

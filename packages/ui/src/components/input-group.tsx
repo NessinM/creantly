@@ -1,8 +1,8 @@
 "use client";
 
-import { Input, type InputProps } from "@nesscom/ui/components/input";
-import { Textarea, type TextareaProps } from "@nesscom/ui/components/textarea";
-import { cn } from "@nesscom/ui/lib/utils";
+import { Input, type InputProps } from "@creantly/ui/components/input";
+import { Textarea, type TextareaProps } from "@creantly/ui/components/textarea";
+import { cn } from "@creantly/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import type * as React from "react";
 

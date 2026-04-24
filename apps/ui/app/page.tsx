@@ -2,8 +2,8 @@ import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
-} from "@nesscom/ui/shared/page-header";
-import { SiteFooter } from "@nesscom/ui/shared/site-footer";
+} from "@creantly/ui/shared/page-header";
+import { SiteFooter } from "@creantly/ui/shared/site-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "@/registry/default/ui/badge";

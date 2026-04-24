@@ -32,7 +32,7 @@ This installs all UI components, the neutral color system, sidebar variables, an
 To add components to an existing project:
 
 ```bash
-npx shadcn@latest add @nesscom/ui
+npx shadcn@latest add @creantly/ui
 ```
 
 This adds all UI primitives (button, card, avatar, dialog, tabs, and more). For the full theme including colors, sidebar, and fonts:
@@ -44,7 +44,7 @@ npx shadcn@latest add @coss/style
 Or add only the color tokens:
 
 ```bash
-npx shadcn@latest add @nesscom/ui @coss/colors-neutral
+npx shadcn@latest add @creantly/ui @coss/colors-neutral
 ```
 
 See the [Styling](/ui/docs/styling) guide for more details.
@@ -102,19 +102,19 @@ const jetbrainsMono = JetBrains_Mono({ variable: "--font-mono", subsets: ["latin
 Components that wrap Base UI primitives re-export the underlying primitive. Use the styled component when our defaults work, or the primitive when you need different compositions or styling. In a monorepo with a shared UI package, apps import from that package—Base UI stays in one place, no need to add it to each app.
 
 ```tsx
-import { Slider, SliderValue, SliderPrimitive } from "@nesscom/ui/components/slider";
+import { Slider, SliderValue, SliderPrimitive } from "@creantly/ui/components/slider";
 ```
 
 ## Base UI Re-exports
 
-When you only need `useRender`, `mergeProps`, `CSPProvider`, or `DirectionProvider`, import them from `@nesscom/ui/base-ui/*` instead of adding `@base-ui/react` as a direct dependency:
+When you only need `useRender`, `mergeProps`, `CSPProvider`, or `DirectionProvider`, import them from `@creantly/ui/base-ui/*` instead of adding `@base-ui/react` as a direct dependency:
 
-- `@nesscom/ui/base-ui/use-render`
-- `@nesscom/ui/base-ui/merge-props`
-- `@nesscom/ui/base-ui/csp-provider`
-- `@nesscom/ui/base-ui/direction-provider`
+- `@creantly/ui/base-ui/use-render`
+- `@creantly/ui/base-ui/merge-props`
+- `@creantly/ui/base-ui/csp-provider`
+- `@creantly/ui/base-ui/direction-provider`
 
-This is especially useful in **monorepos**: apps and packages that already depend on `@nesscom/ui` can use these utilities without adding `@base-ui/react` as another dependency. You avoid duplicate installs, keep versions in sync, and simplify your dependency tree—`@base-ui/react` lives in one place (`@nesscom/ui`), and everything else imports through it.
+This is especially useful in **monorepos**: apps and packages that already depend on `@creantly/ui` can use these utilities without adding `@base-ui/react` as another dependency. You avoid duplicate installs, keep versions in sync, and simplify your dependency tree—`@base-ui/react` lives in one place (`@creantly/ui`), and everything else imports through it.
 
 ## Migration from Radix UI
 

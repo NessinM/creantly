@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Dialog,
   DialogClose,
@@ -9,10 +9,10 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@nesscom/ui/components/dialog";
-import { Field, FieldLabel } from "@nesscom/ui/components/field";
-import { Form } from "@nesscom/ui/components/form";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/dialog";
+import { Field, FieldLabel } from "@creantly/ui/components/field";
+import { Form } from "@creantly/ui/components/form";
+import { Input } from "@creantly/ui/components/input";
 import type { ApiKeyItem } from "./api-keys-list";
 
 interface EditApiKeyDialogProps {

@@ -1,6 +1,6 @@
 "use client";
 
-import { Sheet, SheetPopup, SheetTrigger } from "@nesscom/ui/components/sheet";
+import { Sheet, SheetPopup, SheetTrigger } from "@creantly/ui/components/sheet";
 import { MenuIcon } from "lucide-react";
 import * as React from "react";
 import { SettingsNavContent } from "@/components/settings/settings-nav-section";

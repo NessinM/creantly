@@ -1,8 +1,8 @@
 "use client";
 
-import { Alert, AlertDescription } from "@nesscom/ui/components/alert";
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
+import { Alert, AlertDescription } from "@creantly/ui/components/alert";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
 import {
   Dialog,
   DialogClose,
@@ -12,10 +12,10 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@nesscom/ui/components/dialog";
-import { Field, FieldLabel } from "@nesscom/ui/components/field";
-import { Form } from "@nesscom/ui/components/form";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/dialog";
+import { Field, FieldLabel } from "@creantly/ui/components/field";
+import { Form } from "@creantly/ui/components/form";
+import { Input } from "@creantly/ui/components/input";
 import { TriangleAlertIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CopyableField } from "./copyable-field";

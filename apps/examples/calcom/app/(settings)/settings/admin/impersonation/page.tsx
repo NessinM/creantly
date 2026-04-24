@@ -1,19 +1,19 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
-import { Field, FieldDescription } from "@nesscom/ui/components/field";
-import { Group } from "@nesscom/ui/components/group";
+} from "@creantly/ui/components/card";
+import { Field, FieldDescription } from "@creantly/ui/components/field";
+import { Group } from "@creantly/ui/components/group";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
-} from "@nesscom/ui/components/input-group";
+} from "@creantly/ui/components/input-group";
 import {
   AppHeader,
   AppHeaderContent,

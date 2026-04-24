@@ -10,7 +10,7 @@
     "moduleResolution": "bundler",
     "noEmit": true,
     "paths": {
-      "@nesscom/ui/*": ["packages/ui/src/*"]
+      "@creantly/ui/*": ["packages/ui/src/*"]
     },
     "skipLibCheck": true,
     "strict": true,

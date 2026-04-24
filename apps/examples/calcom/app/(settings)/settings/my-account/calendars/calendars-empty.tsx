@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Empty,
   EmptyContent,
@@ -8,7 +8,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@nesscom/ui/components/empty";
+} from "@creantly/ui/components/empty";
 import { CalendarIcon } from "lucide-react";
 
 export function CalendarsEmpty() {

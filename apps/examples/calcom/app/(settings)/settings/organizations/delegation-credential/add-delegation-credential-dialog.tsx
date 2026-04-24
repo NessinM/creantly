@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Combobox,
   ComboboxEmpty,
@@ -10,7 +10,7 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@nesscom/ui/components/combobox";
+} from "@creantly/ui/components/combobox";
 import {
   Dialog,
   DialogClose,
@@ -19,12 +19,12 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@nesscom/ui/components/dialog";
-import { Field, FieldLabel } from "@nesscom/ui/components/field";
-import { Form } from "@nesscom/ui/components/form";
-import { Input } from "@nesscom/ui/components/input";
-import { SelectButton } from "@nesscom/ui/components/select";
-import { Textarea } from "@nesscom/ui/components/textarea";
+} from "@creantly/ui/components/dialog";
+import { Field, FieldLabel } from "@creantly/ui/components/field";
+import { Form } from "@creantly/ui/components/form";
+import { Input } from "@creantly/ui/components/input";
+import { SelectButton } from "@creantly/ui/components/select";
+import { Textarea } from "@creantly/ui/components/textarea";
 import { SearchIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import {

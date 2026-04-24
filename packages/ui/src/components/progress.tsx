@@ -1,7 +1,7 @@
 "use client";
 
 import { Progress as ProgressPrimitive } from "@base-ui/react/progress";
-import { cn } from "@nesscom/ui/lib/utils";
+import { cn } from "@creantly/ui/lib/utils";
 import type React from "react";
 
 export function Progress({

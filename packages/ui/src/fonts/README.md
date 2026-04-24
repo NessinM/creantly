@@ -7,7 +7,7 @@ This directory contains shared font files and configurations used across all app
 Import fonts directly from the shared UI package:
 
 ```tsx
-import { fontSans, fontHeading } from "@nesscom/ui/fonts";
+import { fontSans, fontHeading } from "@creantly/ui/fonts";
 
 export default function RootLayout({ children }) {
   return (
@@ -38,7 +38,7 @@ export const yourNewFont = localFont({
 });
 ```
 
-3. Use it in any app by importing from `@nesscom/ui/fonts`
+3. Use it in any app by importing from `@creantly/ui/fonts`
 
 ## Benefits of This Approach
 

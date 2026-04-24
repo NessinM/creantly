@@ -4,13 +4,13 @@ import {
   Alert,
   AlertDescription,
   AlertTitle,
-} from "@nesscom/ui/components/alert";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/alert";
+import { Button } from "@creantly/ui/components/button";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@nesscom/ui/components/collapsible";
+} from "@creantly/ui/components/collapsible";
 import {
   Dialog,
   DialogClose,
@@ -20,22 +20,22 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@nesscom/ui/components/dialog";
+} from "@creantly/ui/components/dialog";
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@nesscom/ui/components/field";
-import { Form } from "@nesscom/ui/components/form";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/field";
+import { Form } from "@creantly/ui/components/form";
+import { Input } from "@creantly/ui/components/input";
 import {
   Select,
   SelectItem,
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@nesscom/ui/components/select";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/select";
+import { Switch } from "@creantly/ui/components/switch";
 import { InfoIcon, TriangleAlertIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CopyableField } from "../oauth/copyable-field";

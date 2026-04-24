@@ -8,10 +8,10 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@nesscom/ui/components/alert-dialog";
-import { Button } from "@nesscom/ui/components/button";
-import { Card, CardPanel } from "@nesscom/ui/components/card";
-import { toastManager } from "@nesscom/ui/components/toast";
+} from "@creantly/ui/components/alert-dialog";
+import { Button } from "@creantly/ui/components/button";
+import { Card, CardPanel } from "@creantly/ui/components/card";
+import { toastManager } from "@creantly/ui/components/toast";
 import { useState } from "react";
 import { AddDelegationCredentialDialog } from "./add-delegation-credential-dialog";
 import { DelegationCredentialEmpty } from "./delegation-credential-empty";

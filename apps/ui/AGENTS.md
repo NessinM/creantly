@@ -1,4 +1,4 @@
-# Particle Component Development Guide for @nesscom/ui
+# Particle Component Development Guide for @creantly/ui
 
 This guide provides comprehensive instructions for creating new particle components that match the existing library's patterns and best practices. Use this when creating equivalents of origin components or building new particles from scratch.
 
@@ -115,7 +115,7 @@ import {
 } from "@/registry/default/ui/dialog";
 ```
 
-**Important:** Always use the `@/registry/default/ui/` path, never `@nesscom/ui/components/` in particles.
+**Important:** Always use the `@/registry/default/ui/` path, never `@creantly/ui/components/` in particles.
 
 ### React
 

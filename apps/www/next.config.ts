@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@nesscom/ui"],
+  transpilePackages: ["@creantly/ui"],
 };
 
 export default nextConfig;

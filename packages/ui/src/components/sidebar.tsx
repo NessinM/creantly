@@ -2,25 +2,25 @@
 
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { Button } from "@nesscom/ui/components/button";
-import { Input } from "@nesscom/ui/components/input";
-import { ScrollArea } from "@nesscom/ui/components/scroll-area";
-import { Separator } from "@nesscom/ui/components/separator";
+import { Button } from "@creantly/ui/components/button";
+import { Input } from "@creantly/ui/components/input";
+import { ScrollArea } from "@creantly/ui/components/scroll-area";
+import { Separator } from "@creantly/ui/components/separator";
 import {
   Sheet,
   SheetDescription,
   SheetHeader,
   SheetPopup,
   SheetTitle,
-} from "@nesscom/ui/components/sheet";
-import { Skeleton } from "@nesscom/ui/components/skeleton";
+} from "@creantly/ui/components/sheet";
+import { Skeleton } from "@creantly/ui/components/skeleton";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
-import { useMediaQuery } from "@nesscom/ui/hooks/use-media-query";
-import { cn } from "@nesscom/ui/lib/utils";
+} from "@creantly/ui/components/tooltip";
+import { useMediaQuery } from "@creantly/ui/hooks/use-media-query";
+import { cn } from "@creantly/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { PanelLeftIcon } from "lucide-react";
 import * as React from "react";

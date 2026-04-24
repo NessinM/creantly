@@ -1,14 +1,14 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
-import { EmptyMedia } from "@nesscom/ui/components/empty";
+} from "@creantly/ui/components/card";
+import { EmptyMedia } from "@creantly/ui/components/empty";
 import { DownloadIcon, FileTextIcon, LockIcon } from "lucide-react";
 import {
   ListItem,

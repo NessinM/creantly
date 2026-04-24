@@ -1,8 +1,8 @@
 "use client";
 
+import { useCopyToClipboard } from "@creantly/ui/hooks/use-copy-to-clipboard";
 import { Copy01Icon, Tick02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { useCopyToClipboard } from "@nesscom/ui/hooks/use-copy-to-clipboard";
 import { Button } from "@/registry/default/ui/button";
 
 export function DocsCopyPage({ page }: { page: string }) {

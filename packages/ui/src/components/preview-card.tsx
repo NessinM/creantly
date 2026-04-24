@@ -1,7 +1,7 @@
 "use client";
 
 import { PreviewCard as PreviewCardPrimitive } from "@base-ui/react/preview-card";
-import { cn } from "@nesscom/ui/lib/utils";
+import { cn } from "@creantly/ui/lib/utils";
 import type React from "react";
 
 export const PreviewCard: typeof PreviewCardPrimitive.Root =

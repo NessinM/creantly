@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import { ChevronDownIcon } from "lucide-react";
 import { useState } from "react";
 import type { WebhookItem } from "./webhooks-list-content";

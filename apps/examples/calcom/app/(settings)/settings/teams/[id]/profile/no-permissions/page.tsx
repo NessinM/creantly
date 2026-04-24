@@ -1,4 +1,4 @@
-import { Card, CardFrame, CardPanel } from "@nesscom/ui/components/card";
+import { Card, CardFrame, CardPanel } from "@creantly/ui/components/card";
 import { CopyLink } from "./copy-link";
 import {
   AppHeader,

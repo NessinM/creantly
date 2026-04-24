@@ -3,9 +3,9 @@ import "./globals.css";
 import {
   AnchoredToastProvider,
   ToastProvider,
-} from "@nesscom/ui/components/toast";
-import { fontHeading, fontMono, fontSans } from "@nesscom/ui/fonts";
-import { ThemeProvider } from "@nesscom/ui/shared/theme-provider";
+} from "@creantly/ui/components/toast";
+import { fontHeading, fontMono, fontSans } from "@creantly/ui/fonts";
+import { ThemeProvider } from "@creantly/ui/shared/theme-provider";
 import type { Metadata } from "next";
 import { AppCommand } from "@/components/app/app-command";
 import { DebugProvider } from "@/components/debug-context";

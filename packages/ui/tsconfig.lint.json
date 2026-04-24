@@ -3,6 +3,6 @@
     "outDir": "dist"
   },
   "exclude": ["node_modules", "dist"],
-  "extends": "@nesscom/typescript-config/react-library.json",
+  "extends": "@creantly/typescript-config/react-library.json",
   "include": ["src", "turbo"]
 }

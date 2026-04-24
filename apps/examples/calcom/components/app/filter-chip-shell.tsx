@@ -1,8 +1,12 @@
 "use client";
 
-import { Button, buttonVariants } from "@nesscom/ui/components/button";
-import { Group, GroupSeparator, GroupText } from "@nesscom/ui/components/group";
-import { cn } from "@nesscom/ui/lib/utils";
+import { Button, buttonVariants } from "@creantly/ui/components/button";
+import {
+  Group,
+  GroupSeparator,
+  GroupText,
+} from "@creantly/ui/components/group";
+import { cn } from "@creantly/ui/lib/utils";
 import { XIcon } from "lucide-react";
 import type * as React from "react";
 

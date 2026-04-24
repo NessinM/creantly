@@ -2,8 +2,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/avatar";
+import { Button } from "@creantly/ui/components/button";
 import {
   Menu,
   MenuGroup,
@@ -11,7 +11,7 @@ import {
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
+} from "@creantly/ui/components/menu";
 import { PlusIcon } from "lucide-react";
 
 export type CreateForOption = {

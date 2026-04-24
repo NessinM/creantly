@@ -1,4 +1,4 @@
-import { transformers } from "@nesscom/ui/lib/highlight-code";
+import { transformers } from "@creantly/ui/lib/highlight-code";
 import {
   defineConfig,
   defineDocs,

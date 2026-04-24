@@ -8,9 +8,9 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@nesscom/ui/components/alert-dialog";
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/alert-dialog";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
 import {
   Empty,
   EmptyContent,
@@ -18,18 +18,18 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@nesscom/ui/components/empty";
+} from "@creantly/ui/components/empty";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
+} from "@creantly/ui/components/menu";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
+} from "@creantly/ui/components/tooltip";
 import { EllipsisIcon, PencilIcon, Trash2Icon, VideoIcon } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";

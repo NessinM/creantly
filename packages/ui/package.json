@@ -13,7 +13,7 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@nesscom/typescript-config": "workspace:*",
+    "@creantly/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.1.17",
     "@turbo/gen": "^2.6.1",
     "@types/node": "^24.10.1",
@@ -35,7 +35,7 @@
     "./shared/*": "./src/shared/*.tsx"
   },
   "license": "AGPL-3.0-or-later",
-  "name": "@nesscom/ui",
+  "name": "@creantly/ui",
   "peerDependencies": {
     "next": "^16.0.0",
     "react": "^19.2.0"
@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NessinM/nesscom"
+    "url": "https://github.com/NessinM/ness"
   },
   "type": "module",
   "version": "0.0.1"

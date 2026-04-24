@@ -1,4 +1,4 @@
-import { cn } from "@nesscom/ui/lib/utils";
+import { cn } from "@creantly/ui/lib/utils";
 
 function PageHeader({
   className,

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Menu,
   MenuGroup,
@@ -8,8 +8,8 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { cn } from "@nesscom/ui/lib/utils";
+} from "@creantly/ui/components/menu";
+import { cn } from "@creantly/ui/lib/utils";
 import { EllipsisIcon, PlusIcon } from "lucide-react";
 import Link from "next/link";
 import type * as React from "react";

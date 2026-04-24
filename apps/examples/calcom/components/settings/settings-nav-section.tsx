@@ -4,12 +4,12 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
+} from "@creantly/ui/components/avatar";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@nesscom/ui/components/collapsible";
+} from "@creantly/ui/components/collapsible";
 import {
   ChevronRightIcon,
   ExternalLinkIcon,

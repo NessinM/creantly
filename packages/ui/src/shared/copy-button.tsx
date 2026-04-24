@@ -1,15 +1,15 @@
 "use client";
 
-import { Copy01Icon, Tick02Icon } from "@hugeicons/core-free-icons";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
-import { useCopyToClipboard } from "@nesscom/ui/hooks/use-copy-to-clipboard";
-import { cn } from "@nesscom/ui/lib/utils";
+} from "@creantly/ui/components/tooltip";
+import { useCopyToClipboard } from "@creantly/ui/hooks/use-copy-to-clipboard";
+import { cn } from "@creantly/ui/lib/utils";
+import { Copy01Icon, Tick02Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import type * as React from "react";
 
 export function CopyButton({

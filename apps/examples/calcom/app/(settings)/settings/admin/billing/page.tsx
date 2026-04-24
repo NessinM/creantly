@@ -1,7 +1,7 @@
 "use client";
 
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -9,14 +9,14 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@nesscom/ui/components/field";
-import { Group } from "@nesscom/ui/components/group";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/field";
+import { Group } from "@creantly/ui/components/group";
+import { Input } from "@creantly/ui/components/input";
 import {
   Sheet,
   SheetClose,
@@ -27,7 +27,7 @@ import {
   SheetPopup,
   SheetTitle,
   SheetTrigger,
-} from "@nesscom/ui/components/sheet";
+} from "@creantly/ui/components/sheet";
 import { ExternalLinkIcon } from "lucide-react";
 import {
   AppHeader,

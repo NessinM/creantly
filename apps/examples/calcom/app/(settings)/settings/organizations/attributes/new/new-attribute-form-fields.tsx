@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Combobox,
   ComboboxEmpty,
@@ -10,21 +10,21 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@nesscom/ui/components/combobox";
+} from "@creantly/ui/components/combobox";
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@nesscom/ui/components/field";
-import { Fieldset, FieldsetLegend } from "@nesscom/ui/components/fieldset";
-import { Group } from "@nesscom/ui/components/group";
-import { Input } from "@nesscom/ui/components/input";
-import { Label } from "@nesscom/ui/components/label";
+} from "@creantly/ui/components/field";
+import { Fieldset, FieldsetLegend } from "@creantly/ui/components/fieldset";
+import { Group } from "@creantly/ui/components/group";
+import { Input } from "@creantly/ui/components/input";
+import { Label } from "@creantly/ui/components/label";
 import {
   Popover,
   PopoverPopup,
   PopoverTrigger,
-} from "@nesscom/ui/components/popover";
+} from "@creantly/ui/components/popover";
 import {
   Select,
   SelectButton,
@@ -32,8 +32,8 @@ import {
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@nesscom/ui/components/select";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/select";
+import { Switch } from "@creantly/ui/components/switch";
 import { InfoIcon, PlusIcon, SearchIcon, XIcon } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 

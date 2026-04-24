@@ -1,4 +1,4 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -7,7 +7,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import { ActivityIcon } from "lucide-react";
 import Link from "next/link";
 import { NewWebhookFormFields } from "./new-webhook-form-fields";

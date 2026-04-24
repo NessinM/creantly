@@ -4,7 +4,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
+} from "@creantly/ui/components/avatar";
 import {
   Menu,
   MenuGroup,
@@ -13,8 +13,8 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { useMediaQuery } from "@nesscom/ui/hooks/use-media-query";
+} from "@creantly/ui/components/menu";
+import { useMediaQuery } from "@creantly/ui/hooks/use-media-query";
 import {
   GaugeIcon,
   LogOutIcon,

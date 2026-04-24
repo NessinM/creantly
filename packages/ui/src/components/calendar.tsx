@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@nesscom/ui/lib/utils";
+import { cn } from "@creantly/ui/lib/utils";
 import {
   ChevronLeftIcon,
   ChevronRightIcon,

@@ -3,9 +3,9 @@
 import { Dialog as SheetPrimitive } from "@base-ui/react/dialog";
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { Button } from "@nesscom/ui/components/button";
-import { ScrollArea } from "@nesscom/ui/components/scroll-area";
-import { cn } from "@nesscom/ui/lib/utils";
+import { Button } from "@creantly/ui/components/button";
+import { ScrollArea } from "@creantly/ui/components/scroll-area";
+import { cn } from "@creantly/ui/lib/utils";
 import { XIcon } from "lucide-react";
 import type React from "react";
 

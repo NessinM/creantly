@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@base-ui/react": "1.4.1",
-    "@nesscom/ui": "workspace:*",
+    "@creantly/ui": "workspace:*",
     "@hugeicons/core-free-icons": "^2.0.0",
     "@hugeicons/react": "^1.1.1",
     "@remixicon/react": "^4.7.0",
@@ -23,7 +23,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
-    "@nesscom/typescript-config": "workspace:*",
+    "@creantly/typescript-config": "workspace:*",
     "@shikijs/transformers": "^3.15.0",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/mdx": "^2.0.13",

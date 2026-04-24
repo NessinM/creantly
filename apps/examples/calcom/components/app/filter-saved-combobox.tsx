@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Combobox,
   ComboboxEmpty,
@@ -9,16 +9,16 @@ import {
   ComboboxList,
   ComboboxPopup,
   ComboboxTrigger,
-} from "@nesscom/ui/components/combobox";
-import { Group, GroupSeparator } from "@nesscom/ui/components/group";
+} from "@creantly/ui/components/combobox";
+import { Group, GroupSeparator } from "@creantly/ui/components/group";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { SelectButton } from "@nesscom/ui/components/select";
+} from "@creantly/ui/components/menu";
+import { SelectButton } from "@creantly/ui/components/select";
 import {
   ChevronsUpDownIcon,
   CopyIcon,

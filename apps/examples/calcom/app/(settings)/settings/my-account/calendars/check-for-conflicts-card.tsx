@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@nesscom/ui/components/alert-dialog";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/alert-dialog";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -18,15 +18,15 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
-import { Field, FieldLabel } from "@nesscom/ui/components/field";
+} from "@creantly/ui/components/card";
+import { Field, FieldLabel } from "@creantly/ui/components/field";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { Switch } from "@nesscom/ui/components/switch";
+} from "@creantly/ui/components/menu";
+import { Switch } from "@creantly/ui/components/switch";
 import { EllipsisIcon, PlusIcon, Trash2Icon } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";

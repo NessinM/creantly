@@ -4,11 +4,11 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
-import { CardFrame } from "@nesscom/ui/components/card";
-import { Checkbox } from "@nesscom/ui/components/checkbox";
+} from "@creantly/ui/components/avatar";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
+import { CardFrame } from "@creantly/ui/components/card";
+import { Checkbox } from "@creantly/ui/components/checkbox";
 import {
   Combobox,
   ComboboxCollection,
@@ -21,14 +21,14 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@nesscom/ui/components/combobox";
-import { Group, GroupSeparator } from "@nesscom/ui/components/group";
+} from "@creantly/ui/components/combobox";
+import { Group, GroupSeparator } from "@creantly/ui/components/group";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@nesscom/ui/components/input-group";
-import { Label } from "@nesscom/ui/components/label";
+} from "@creantly/ui/components/input-group";
+import { Label } from "@creantly/ui/components/label";
 import {
   Menu,
   MenuGroup,
@@ -37,7 +37,7 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
+} from "@creantly/ui/components/menu";
 import {
   Table,
   TableBody,
@@ -45,7 +45,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@nesscom/ui/components/table";
+} from "@creantly/ui/components/table";
 import {
   type ColumnDef,
   flexRender,

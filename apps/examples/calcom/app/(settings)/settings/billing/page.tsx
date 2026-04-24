@@ -1,10 +1,10 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrameDescription,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import {

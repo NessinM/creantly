@@ -1,7 +1,7 @@
 import "./globals.css";
 
-import { fontHeading, fontMono, fontSans } from "@nesscom/ui/fonts";
-import { ThemeProvider } from "@nesscom/ui/shared/theme-provider";
+import { fontHeading, fontMono, fontSans } from "@creantly/ui/fonts";
+import { ThemeProvider } from "@creantly/ui/shared/theme-provider";
 import type { Metadata } from "next";
 import {
   AnchoredToastProvider,

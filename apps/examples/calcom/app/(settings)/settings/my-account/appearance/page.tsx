@@ -1,4 +1,4 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -7,7 +7,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/card";
 import { BookingThemeSection, DashboardThemeSection } from "./appearance-form";
 import { BookingLayoutSection } from "./booking-layout-section";
 import { CustomBrandColorsSection } from "./custom-brand-colors-section";

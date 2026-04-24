@@ -4,7 +4,7 @@ import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@nesscom/ui/components/field";
+} from "@creantly/ui/components/field";
 import {
   Select,
   SelectGroup,
@@ -13,7 +13,7 @@ import {
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@nesscom/ui/components/select";
+} from "@creantly/ui/components/select";
 import { FieldGrid } from "@/components/particles/field-grid";
 
 const addEventsToGroups = [

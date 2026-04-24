@@ -1,9 +1,9 @@
 "use client";
 
+import { useCopyToClipboard } from "@creantly/ui/hooks/use-copy-to-clipboard";
+import { Icons } from "@creantly/ui/shared/icons";
 import { Tick02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { useCopyToClipboard } from "@nesscom/ui/hooks/use-copy-to-clipboard";
-import { Icons } from "@nesscom/ui/shared/icons";
 import type * as React from "react";
 import { Button } from "@/registry/default/ui/button";
 import {

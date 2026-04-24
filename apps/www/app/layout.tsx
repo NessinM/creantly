@@ -1,10 +1,10 @@
 import "./globals.css";
 
-import { fontHeading, fontMono, fontSans } from "@nesscom/ui/fonts";
-import { SiteCta } from "@nesscom/ui/shared/site-cta";
-import { SiteFooter } from "@nesscom/ui/shared/site-footer";
-import { SiteHeader } from "@nesscom/ui/shared/site-header";
-import { ThemeProvider } from "@nesscom/ui/shared/theme-provider";
+import { fontHeading, fontMono, fontSans } from "@creantly/ui/fonts";
+import { SiteCta } from "@creantly/ui/shared/site-cta";
+import { SiteFooter } from "@creantly/ui/shared/site-footer";
+import { SiteHeader } from "@creantly/ui/shared/site-header";
+import { ThemeProvider } from "@creantly/ui/shared/theme-provider";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

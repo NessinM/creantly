@@ -10,7 +10,7 @@
     ]
   },
   "exclude": ["node_modules"],
-  "extends": "@nesscom/typescript-config/nextjs.json",
+  "extends": "@creantly/typescript-config/nextjs.json",
   "include": [
     "**/*.ts",
     "**/*.tsx",

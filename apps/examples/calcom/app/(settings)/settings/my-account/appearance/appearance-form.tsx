@@ -1,7 +1,7 @@
 "use client";
 
-import { Field } from "@nesscom/ui/components/field";
-import { Fieldset } from "@nesscom/ui/components/fieldset";
+import { Field } from "@creantly/ui/components/field";
+import { Fieldset } from "@creantly/ui/components/fieldset";
 import { ImageRadioOption } from "@/components/particles";
 
 const themeItems = [

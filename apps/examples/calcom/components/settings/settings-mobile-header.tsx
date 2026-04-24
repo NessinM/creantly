@@ -1,4 +1,4 @@
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import type * as React from "react";

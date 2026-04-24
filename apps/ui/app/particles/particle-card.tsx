@@ -1,6 +1,6 @@
+import { Icons } from "@creantly/ui/shared/icons";
 import { InformationCircleIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Icons } from "@nesscom/ui/shared/icons";
 import { cache } from "react";
 import { Index } from "@/registry/__index__";
 import { Button } from "@/registry/default/ui/button";

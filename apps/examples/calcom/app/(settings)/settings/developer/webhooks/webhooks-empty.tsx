@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@nesscom/ui/components/button";
+import { Button } from "@creantly/ui/components/button";
 import {
   Empty,
   EmptyContent,
@@ -8,13 +8,13 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@nesscom/ui/components/empty";
+} from "@creantly/ui/components/empty";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
+} from "@creantly/ui/components/menu";
 import { EllipsisIcon, WebhookIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import type { CreateForOption } from "./new-webhook-button";

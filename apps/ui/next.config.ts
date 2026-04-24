@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  transpilePackages: ["@nesscom/ui"],
+  transpilePackages: ["@creantly/ui"],
 };
 
 export default withMDX(nextConfig);

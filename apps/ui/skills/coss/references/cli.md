@@ -19,13 +19,13 @@ Use this guide when installing, previewing, or discovering coss components via t
 npx shadcn@latest init @coss/style
 
 # Existing projects - all primitives
-npx shadcn@latest add @nesscom/ui
+npx shadcn@latest add @creantly/ui
 
 # Existing projects - full theme setup
 npx shadcn@latest add @coss/style
 
 # Existing projects - primitives + color tokens
-npx shadcn@latest add @nesscom/ui @coss/colors-neutral
+npx shadcn@latest add @creantly/ui @coss/colors-neutral
 ```
 
 `@coss/style` automatically installs `@coss/fonts` (Inter for `--font-sans` and `--font-heading`, Geist Mono for `--font-mono`), which configures all three font variables in `layout.tsx`. No manual font wiring needed.

@@ -1,5 +1,5 @@
-import { Separator } from "@nesscom/ui/components/separator";
-import { SiteHeader as WorkspaceSiteHeader } from "@nesscom/ui/shared/site-header";
+import { Separator } from "@creantly/ui/components/separator";
+import { SiteHeader as WorkspaceSiteHeader } from "@creantly/ui/shared/site-header";
 import { CommandMenu } from "@/components/command-menu";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";

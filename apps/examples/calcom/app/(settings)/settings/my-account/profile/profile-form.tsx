@@ -4,37 +4,37 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@nesscom/ui/components/avatar";
-import { Badge } from "@nesscom/ui/components/badge";
-import { Button } from "@nesscom/ui/components/button";
+} from "@creantly/ui/components/avatar";
+import { Badge } from "@creantly/ui/components/badge";
+import { Button } from "@creantly/ui/components/button";
 import {
   Field,
   FieldDescription,
   FieldLabel,
-} from "@nesscom/ui/components/field";
-import { Fieldset, FieldsetLegend } from "@nesscom/ui/components/fieldset";
-import { Input } from "@nesscom/ui/components/input";
+} from "@creantly/ui/components/field";
+import { Fieldset, FieldsetLegend } from "@creantly/ui/components/fieldset";
+import { Input } from "@creantly/ui/components/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
   InputGroupTextarea,
-} from "@nesscom/ui/components/input-group";
-import { Label } from "@nesscom/ui/components/label";
+} from "@creantly/ui/components/input-group";
+import { Label } from "@creantly/ui/components/label";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@nesscom/ui/components/menu";
-import { Toggle } from "@nesscom/ui/components/toggle";
+} from "@creantly/ui/components/menu";
+import { Toggle } from "@creantly/ui/components/toggle";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@nesscom/ui/components/tooltip";
-import { useCopyToClipboard } from "@nesscom/ui/hooks/use-copy-to-clipboard";
+} from "@creantly/ui/components/tooltip";
+import { useCopyToClipboard } from "@creantly/ui/hooks/use-copy-to-clipboard";
 import {
   BoldIcon,
   CheckIcon,

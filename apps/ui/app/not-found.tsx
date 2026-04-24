@@ -2,7 +2,7 @@ import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
-} from "@nesscom/ui/shared/page-header";
+} from "@creantly/ui/shared/page-header";
 import { RiArrowLeftLine } from "@remixicon/react";
 import type { Metadata } from "next";
 import Link from "next/link";

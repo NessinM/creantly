@@ -1,8 +1,8 @@
 "use client";
 
 import { OTPFieldPreview as OTPFieldPrimitive } from "@base-ui/react/otp-field";
-import { Separator } from "@nesscom/ui/components/separator";
-import { cn } from "@nesscom/ui/lib/utils";
+import { Separator } from "@creantly/ui/components/separator";
+import { cn } from "@creantly/ui/lib/utils";
 import type * as React from "react";
 
 export function OTPField({

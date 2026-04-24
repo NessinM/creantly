@@ -8,9 +8,9 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@nesscom/ui/components/alert-dialog";
-import { Button } from "@nesscom/ui/components/button";
-import { Card, CardPanel } from "@nesscom/ui/components/card";
+} from "@creantly/ui/components/alert-dialog";
+import { Button } from "@creantly/ui/components/button";
+import { Card, CardPanel } from "@creantly/ui/components/card";
 import { PlusIcon } from "lucide-react";
 import { useState } from "react";
 import { ApiKeysEmpty } from "./api-keys-empty";

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMediaQuery } from "@nesscom/ui/hooks/use-media-query";
+import { useMediaQuery } from "@creantly/ui/hooks/use-media-query";
 import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import type * as React from "react";
