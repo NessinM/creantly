@@ -6,6 +6,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
 } from "@nesscom/ui/components/card";
+import type { JSX } from "react";
 
 interface DangerZoneProps {
   description: string;
@@ -17,7 +18,7 @@ export function DangerZone({
   description,
   buttonLabel,
   onAction,
-}: DangerZoneProps) {
+}: DangerZoneProps): JSX.Element {
   return (
     <CardFrame className="flex-row items-center justify-between">
       <CardFrameHeader>

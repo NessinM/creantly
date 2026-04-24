@@ -4,6 +4,7 @@ import { Checkbox } from "@nesscom/ui/components/checkbox";
 import { CheckboxGroup } from "@nesscom/ui/components/checkbox-group";
 import { FieldItem, FieldLabel } from "@nesscom/ui/components/field";
 import Image from "next/image";
+import type { JSX } from "react";
 
 export interface ImageCheckboxOptionItem {
   label: string;
@@ -28,7 +29,7 @@ export function ImageCheckboxOption({
   value,
   onValueChange,
   defaultItem,
-}: ImageCheckboxOptionProps) {
+}: ImageCheckboxOptionProps): JSX.Element {
   const isControlled = value != null && onValueChange != null;
 
   return (

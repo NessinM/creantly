@@ -3,6 +3,7 @@
 import { FieldItem, FieldLabel } from "@nesscom/ui/components/field";
 import { Radio, RadioGroup } from "@nesscom/ui/components/radio-group";
 import Image from "next/image";
+import type { JSX } from "react";
 
 export interface ImageRadioOptionItem {
   label: string;
@@ -18,7 +19,7 @@ export interface ImageRadioOptionProps {
 export function ImageRadioOption({
   items,
   defaultValue,
-}: ImageRadioOptionProps) {
+}: ImageRadioOptionProps): JSX.Element {
   return (
     <RadioGroup
       className="flex w-full flex-row gap-4 md:gap-6"
