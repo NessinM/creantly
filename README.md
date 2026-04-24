@@ -1,7 +1,8 @@
-![creantly.com](https://github.com/user-attachments/assets/56dfe7f7-85b7-44ee-b89a-1c30c5c4a156)
+![creantly.com](https://github.com/user-attachments/assets/10d51d2d-0ccf-41f7-97b1-c5bff635dcb9)
 
 <h3 align="center">creantly.com (formerly Origin UI)</h3>
-<p align="center">The <strong>everything but AI</strong> company.</p>
+<p align="center">The <strong>everything but AI</strong> company.</p>![Uploading Gemini_Generated_Image_wcrd6wwcrd6wwcrd.png…]()
+
 
 ## About the Project
 
