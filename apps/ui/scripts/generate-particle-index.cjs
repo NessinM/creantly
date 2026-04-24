@@ -156,7 +156,9 @@ function main() {
     lines.push(`### ${type}`);
     lines.push("");
     for (const p of particles) {
-      lines.push(`- ${p.desc} | [JSON](${CREANTLY_JSON_BASE_URL}/${p.name}.json)`);
+      lines.push(
+        `- ${p.desc} | [JSON](${CREANTLY_JSON_BASE_URL}/${p.name}.json)`,
+      );
     }
     lines.push("");
   }
