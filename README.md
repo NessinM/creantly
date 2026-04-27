@@ -50,7 +50,6 @@ For local development, create a `.env.local` file in each of the app directories
     # apps/ui/.env.local
     NEXT_PUBLIC_APP_URL=http://localhost:4000/ui
     NEXT_PUBLIC_CREANTLY_URL=http://localhost:3000
-    NEXT_PUBLIC_ORIGIN_URL=http://localhost:4001
     ```
 
 > [!NOTE]
