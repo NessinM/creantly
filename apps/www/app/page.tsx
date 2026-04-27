@@ -128,7 +128,7 @@ export default async function Page() {
 
         <p className="not-first:mt-6 leading-relaxed">—</p>
         <p className="not-first:mt-6 leading-relaxed">Nessin Alvarado</p>
-        <p className="not-first:mt-6 leading-relaxed text-sm opacity-70">
+        <p className="not-first:mt-6 text-sm leading-relaxed opacity-70">
           infrastructure architect · AI systems
         </p>
       </div>
