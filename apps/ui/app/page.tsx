@@ -94,7 +94,7 @@ function CategoryCard({
   const isNew = PAGES_NEW.includes(href);
 
   return (
-    <CardFrame className="w-full after:pointer-events-none after:absolute after:-inset-[5px] after:-z-1 after:rounded-[calc(var(--radius-xl)+4px)] after:border after:border-border/64">
+    <CardFrame className="w-full after:pointer-events-none after:absolute after:inset-[-5px] after:-z-1 after:rounded-[calc(var(--radius-xl)+4px)] after:border after:border-border/64">
       <CardFrameHeader className="static grid grid-rows-[auto_1fr]">
         <CardFrameTitle
           className="font-heading text-base"
@@ -110,12 +110,12 @@ function CategoryCard({
           className="line-clamp-2 sm:h-[2lh]"
           render={<p />}
         >
-          {description || "\u00A0"}
+          {description || "\u00A0"}ßß
         </CardFrameDescription>
       </CardFrameHeader>
       <Card className="pointer-events-none min-h-55 flex-1 flex-col flex-wrap overflow-x-auto bg-[color-mix(in_srgb,var(--color-card),var(--color-sidebar))] dark:bg-background">
         {isNew && (
-          <Badge className="absolute end-3 top-3" variant="info">
+          <Badge className="absolute inset-e-3 top-3" variant="info">
             New
           </Badge>
         )}

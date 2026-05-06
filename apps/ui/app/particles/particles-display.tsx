@@ -5,12 +5,24 @@ import type { RegistryCategory } from "@/registry/registry-categories";
 import { ParticleCard } from "./particle-card";
 import { ParticleCardContainer } from "./particle-card-container";
 
+// ─── Types ────────────────────────────────────────────────────────────────────
+
 type Particle = {
   name: string;
   categories?: RegistryCategory[];
   registryDependencies?: string[];
   meta?: { className?: string; colSpan?: number };
 };
+
+// ─── Constants ────────────────────────────────────────────────────────────────
+
+const RELEVANCE_WEIGHTS = {
+  namePrefix: 30,
+  registryDep: 20,
+  firstCategory: 10,
+} as const;
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function calculateRelevanceWeight(
   particle: Particle,
@@ -19,25 +31,36 @@ function calculateRelevanceWeight(
   let weight = 0;
 
   for (const term of searchTerms) {
-    const normalizedTerm = term.replace(/\s+/g, "-");
-
-    if (particle.name.startsWith(`p-${normalizedTerm}-`)) {
-      weight += 30;
-    }
-
+    const slug = term.replace(/\s+/g, "-");
     const deps = particle.registryDependencies ?? [];
-    if (deps.some((dep) => dep === `@creantly/${normalizedTerm}`)) {
-      weight += 20;
-    }
-
     const categories = particle.categories ?? [];
-    if (categories[0] === term) {
-      weight += 10;
-    }
+
+    if (particle.name.startsWith(`p-${slug}-`))
+      weight += RELEVANCE_WEIGHTS.namePrefix;
+    if (deps.includes(`@creantly/${slug}`))
+      weight += RELEVANCE_WEIGHTS.registryDep;
+    if (categories[0] === term) weight += RELEVANCE_WEIGHTS.firstCategory;
   }
 
   return weight;
 }
+
+function matchesAllCategories(
+  particle: Particle,
+  selected: RegistryCategory[],
+): boolean {
+  const categories = particle.categories ?? [];
+  return selected.every((cat) => categories.includes(cat));
+}
+
+const getParticles = cache(
+  (): Particle[] =>
+    Object.values(Index).filter(
+      (item) => item.type === "registry:block",
+    ) as Particle[],
+);
+
+// ─── Sub-components ───────────────────────────────────────────────────────────
 
 function ParticleCardSkeleton({ className }: { className?: string }) {
   return (
@@ -61,12 +84,17 @@ function ParticleCardSkeleton({ className }: { className?: string }) {
   );
 }
 
-// Cache the particles array to avoid recomputing on every render
-const getParticles = cache(() => {
-  return Object.values(Index).filter(
-    (item) => item.type === "registry:block",
-  ) as Particle[];
-});
+function EmptyState() {
+  return (
+    <div className="text-center">
+      <p className="text-muted-foreground">
+        No particles found for the selected filters
+      </p>
+    </div>
+  );
+}
+
+// ─── Component ────────────────────────────────────────────────────────────────
 
 export async function ParticlesDisplay({
   selectedCategories,
@@ -76,44 +104,29 @@ export async function ParticlesDisplay({
   const particles = getParticles();
 
   const filteredParticles = particles
-    .filter((particle) => {
-      const categories = particle.categories ?? [];
-      return selectedCategories.every((value) => categories.includes(value));
-    })
-    .sort((a, b) => {
-      const weightA = calculateRelevanceWeight(a, selectedCategories);
-      const weightB = calculateRelevanceWeight(b, selectedCategories);
-      return weightB - weightA;
-    });
-
-  if (filteredParticles.length === 0) {
-    return (
-      <div className="text-center">
-        <p className="text-muted-foreground">
-          No particles found for the selected filters
-        </p>
-      </div>
+    .filter((particle) => matchesAllCategories(particle, selectedCategories))
+    .sort(
+      (a, b) =>
+        calculateRelevanceWeight(b, selectedCategories) -
+        calculateRelevanceWeight(a, selectedCategories),
     );
-  }
+
+  if (filteredParticles.length === 0) return <EmptyState />;
 
   return (
     <div className="grid flex-1 items-stretch gap-9 pb-12 lg:grid-cols-2 lg:gap-6 xl:gap-9">
-      {filteredParticles.map((particle) => {
-        const className = particle.meta?.className as string | undefined;
-        const colSpan = particle.meta?.colSpan as number | undefined;
-        return (
-          <Suspense
-            fallback={<ParticleCardSkeleton className={className} />}
-            key={particle.name}
-          >
-            <ParticleCard
-              className={className}
-              colSpan={colSpan}
-              name={particle.name}
-            />
-          </Suspense>
-        );
-      })}
+      {filteredParticles.map(({ name, meta }) => (
+        <Suspense
+          fallback={<ParticleCardSkeleton className={meta?.className} />}
+          key={name}
+        >
+          <ParticleCard
+            className={meta?.className}
+            colSpan={meta?.colSpan}
+            name={name}
+          />
+        </Suspense>
+      ))}
     </div>
   );
 }

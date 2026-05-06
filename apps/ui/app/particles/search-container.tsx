@@ -6,21 +6,41 @@ import { Index } from "@/registry/__index__";
 import { getCategorySortOrder } from "@/registry/registry-categories";
 import SearchField from "./search-field";
 
-const particles = Object.values(Index).filter(
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+type FilterItem = { label: string; value: string };
+
+// ─── Constants ────────────────────────────────────────────────────────────────
+
+const REGISTRY_BLOCKS = Object.values(Index).filter(
   (item) => item.type === "registry:block",
 );
 
-const uniqueCategories = Array.from(
-  new Set(particles.flatMap((particle) => particle.categories || [])),
-).sort((a, b) => getCategorySortOrder(a) - getCategorySortOrder(b));
+const SEARCH_ITEMS: FilterItem[] = Array.from(
+  new Set(REGISTRY_BLOCKS.flatMap((block) => block.categories ?? [])),
+)
+  .sort((a, b) => getCategorySortOrder(a) - getCategorySortOrder(b))
+  .map((category) => ({
+    label: category
+      .split(" ")
+      .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" "),
+    value: category,
+  }));
 
-const searchItems = uniqueCategories.map((category) => ({
-  label: category
-    .split(" ")
-    .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" "),
-  value: category,
-}));
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function tagsToItems(tags: string[]): FilterItem[] {
+  return tags
+    .map((tag) => SEARCH_ITEMS.find((item) => item.value === tag))
+    .filter((item): item is FilterItem => !!item);
+}
+
+function itemsToQueryString(items: FilterItem[]): string {
+  return items.map((item) => item.value).join(",");
+}
+
+// ─── Component ────────────────────────────────────────────────────────────────
 
 export default function SearchContainer() {
   const router = useRouter();
@@ -29,17 +49,14 @@ export default function SearchContainer() {
   const [, startTransition] = useTransition();
 
   const selectedItems = useMemo(() => {
-    const tags = searchParams?.get("tags")?.split(",").filter(Boolean) || [];
-    return tags
-      .map((tag) => searchItems.find((item) => item.value === tag))
-      .filter((item): item is { label: string; value: string } => !!item);
+    const tags = searchParams?.get("tags")?.split(",").filter(Boolean) ?? [];
+    return tagsToItems(tags);
   }, [searchParams]);
 
   const updateSelectedItems = useCallback(
-    (items: { label: string; value: string }[]) => {
+    (items: FilterItem[]) => {
       startTransition(() => {
-        const tags =
-          items.length > 0 ? items.map((item) => item.value).join(",") : "";
+        const tags = itemsToQueryString(items);
         const newUrl = tags
           ? `${pathname}?tags=${encodeURIComponent(tags)}`
           : pathname;
@@ -52,7 +69,7 @@ export default function SearchContainer() {
   return (
     <div className="mb-8 md:mb-12 lg:mb-16">
       <SearchField
-        items={searchItems}
+        items={SEARCH_ITEMS}
         onItemsChange={updateSelectedItems}
         selectedItems={selectedItems}
       />

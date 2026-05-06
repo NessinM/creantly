@@ -22,10 +22,14 @@ import {
 } from "@/registry/default/ui/combobox";
 import { getCategorySortOrder } from "@/registry/registry-categories";
 
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+type FilterItem = { label: string; value: string };
+
 interface SearchFieldProps {
-  selectedItems: { label: string; value: string }[];
-  onItemsChange: (items: { label: string; value: string }[]) => void;
-  items: { label: string; value: string }[];
+  selectedItems: FilterItem[];
+  onItemsChange: (items: FilterItem[]) => void;
+  items: FilterItem[];
 }
 
 interface RegistryItem {
@@ -33,10 +37,116 @@ interface RegistryItem {
   categories?: string[];
 }
 
-// Get all particles (registry:block type) from registry
-const particles = Object.values(Index).filter(
+type GroupType = "enabled" | "disabled";
+
+interface ItemGroup {
+  type: GroupType;
+  items: FilterItem[];
+}
+
+// ─── Constants ────────────────────────────────────────────────────────────────
+
+const REGISTRY_BLOCKS = Object.values(Index).filter(
   (item: RegistryItem) => item.type === "registry:block",
 );
+
+const GROUP_LABELS: Record<GroupType, string> = {
+  enabled: "Filter particles",
+  disabled: "No matches",
+};
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+/**
+ * Returns true if adding `candidateValue` to `selectedValues`
+ * would still match at least one registry block.
+ */
+function hasMatchingParticles(
+  selectedValues: string[],
+  candidateValue: string,
+): boolean {
+  const testValues = [...selectedValues, candidateValue];
+  return REGISTRY_BLOCKS.some((block: RegistryItem) => {
+    const categories = block.categories ?? [];
+    return testValues.every((value) => categories.includes(value));
+  });
+}
+
+function sortByCategory(a: FilterItem, b: FilterItem): number {
+  return getCategorySortOrder(a.value) - getCategorySortOrder(b.value);
+}
+
+// ─── Hooks ────────────────────────────────────────────────────────────────────
+
+function useGroupedItems(
+  items: FilterItem[],
+  selectedItems: FilterItem[],
+): ItemGroup[] {
+  return useMemo(() => {
+    const selectedValues = selectedItems.map((item) => item.value);
+
+    const enabled: FilterItem[] = [];
+    const disabled: FilterItem[] = [];
+
+    for (const item of items) {
+      const isSelected = selectedValues.includes(item.value);
+      const wouldMatch =
+        isSelected || hasMatchingParticles(selectedValues, item.value);
+
+      if (wouldMatch) {
+        enabled.push(item);
+      } else {
+        disabled.push(item);
+      }
+    }
+
+    // Selected items first, then sort the rest by custom category order
+    const sortedEnabled = [...enabled].sort((a, b) => {
+      const aSelected = selectedValues.includes(a.value);
+      const bSelected = selectedValues.includes(b.value);
+      if (aSelected !== bSelected) return aSelected ? -1 : 1;
+      return sortByCategory(a, b);
+    });
+
+    const sortedDisabled = [...disabled].sort(sortByCategory);
+
+    const groups: ItemGroup[] = [];
+    if (sortedEnabled.length > 0)
+      groups.push({ type: "enabled", items: sortedEnabled });
+    if (sortedDisabled.length > 0)
+      groups.push({ type: "disabled", items: sortedDisabled });
+
+    return groups;
+  }, [items, selectedItems]);
+}
+
+// ─── Sub-components ───────────────────────────────────────────────────────────
+
+function LabeledItem({ label }: { label: string }) {
+  return (
+    <div className="flex items-center gap-2">
+      <HugeiconsIcon className="opacity-80" icon={LabelIcon} strokeWidth={2} />
+      <span>{label}</span>
+    </div>
+  );
+}
+
+function SelectedChip({ item }: { item: FilterItem }) {
+  return (
+    <ComboboxChip aria-label={item.label} key={item.value}>
+      <div className="flex items-center gap-1.5">
+        <HugeiconsIcon
+          className="opacity-80"
+          icon={LabelIcon}
+          strokeWidth={2}
+        />
+        <span>{item.label}</span>
+      </div>
+    </ComboboxChip>
+  );
+}
+
+// ─── Component ────────────────────────────────────────────────────────────────
 
 export default function SearchField({
   selectedItems,
@@ -44,89 +154,14 @@ export default function SearchField({
   items,
 }: SearchFieldProps) {
   const [open, setOpen] = useState(selectedItems.length === 0);
+  const groupedItems = useGroupedItems(items, selectedItems);
 
-  // Keep popup open when no selection is made
+  // Keep popup open when nothing is selected
   useEffect(() => {
-    if (selectedItems.length === 0) {
-      setOpen(true);
-    }
+    if (selectedItems.length === 0) setOpen(true);
   }, [selectedItems.length]);
 
-  const groupedItems = useMemo(() => {
-    const selectedValues = selectedItems.map((item) => item.value);
-
-    // Calculate which items would result in particles when combined with selected items
-    const availableItems = items.filter((item) => {
-      // Skip already selected items
-      if (selectedValues.includes(item.value)) {
-        return true;
-      }
-
-      // Check if adding this category would result in any particles
-      const testValues = [...selectedValues, item.value];
-      const hasMatches = particles.some((particle: RegistryItem) => {
-        const categories = particle.categories ?? [];
-        return testValues.every((value) => categories.includes(value));
-      });
-
-      return hasMatches;
-    });
-
-    // Separate items into enabled and disabled
-    const enabled: typeof items = [];
-    const disabled: typeof items = [];
-
-    items.forEach((item) => {
-      const isSelected = selectedValues.includes(item.value);
-      const isAvailable = availableItems.some(
-        (available) => available.value === item.value,
-      );
-
-      if (isSelected || isAvailable) {
-        enabled.push(item);
-      } else {
-        disabled.push(item);
-      }
-    });
-
-    // Sort enabled items: selected first, then available, then by custom order
-    const sortedEnabled = [...enabled].sort((a, b) => {
-      const aSelected = selectedValues.includes(a.value);
-      const bSelected = selectedValues.includes(b.value);
-
-      // Selected items first
-      if (aSelected && !bSelected) return -1;
-      if (!aSelected && bSelected) return 1;
-
-      // Then sort by custom category order
-      const aOrder = getCategorySortOrder(a.value);
-      const bOrder = getCategorySortOrder(b.value);
-      return aOrder - bOrder;
-    });
-
-    // Sort disabled items by custom category order
-    const sortedDisabled = [...disabled].sort((a, b) => {
-      const aOrder = getCategorySortOrder(a.value);
-      const bOrder = getCategorySortOrder(b.value);
-      return aOrder - bOrder;
-    });
-
-    // Return groups similar to the grouped example
-    const groups: Array<{ type: "enabled" | "disabled"; items: typeof items }> =
-      [];
-
-    if (sortedEnabled.length > 0) {
-      groups.push({ items: sortedEnabled, type: "enabled" });
-    }
-
-    if (sortedDisabled.length > 0) {
-      groups.push({ items: sortedDisabled, type: "disabled" });
-    }
-
-    return groups;
-  }, [selectedItems, items]);
-
-  const handleValueChange = (newItems: { label: string; value: string }[]) => {
+  const handleValueChange = (newItems: FilterItem[]) => {
     onItemsChange(newItems);
     setOpen(false);
   };
@@ -154,19 +189,10 @@ export default function SearchField({
           }
         >
           <ComboboxValue>
-            {(value: { value: string; label: string }[]) => (
+            {(value: FilterItem[]) => (
               <>
                 {value?.map((item) => (
-                  <ComboboxChip aria-label={item.label} key={item.value}>
-                    <div className="flex items-center gap-1.5">
-                      <HugeiconsIcon
-                        className="opacity-80"
-                        icon={LabelIcon}
-                        strokeWidth={2}
-                      />
-                      <span>{item.label}</span>
-                    </div>
-                  </ComboboxChip>
+                  <SelectedChip key={item.value} item={item} />
                 ))}
                 <ComboboxChipsInput
                   aria-label="Search components"
@@ -177,35 +203,27 @@ export default function SearchField({
             )}
           </ComboboxValue>
         </ComboboxChips>
+
         <ComboboxPopup>
           <ComboboxEmpty>No filters found.</ComboboxEmpty>
           <ComboboxList>
-            {(group: (typeof groupedItems)[number]) => (
+            {(group: ItemGroup) => (
               <React.Fragment key={group.type}>
                 {group.type === "disabled" && (
                   <ComboboxSeparator className="my-2" />
                 )}
                 <ComboboxGroup items={group.items}>
                   <ComboboxGroupLabel>
-                    {group.type === "enabled"
-                      ? "Filter particles"
-                      : "No matches"}
+                    {GROUP_LABELS[group.type]}
                   </ComboboxGroupLabel>
                   <ComboboxCollection>
-                    {(item: (typeof group.items)[number]) => (
+                    {(item: FilterItem) => (
                       <ComboboxItem
                         disabled={group.type === "disabled"}
                         key={item.value}
                         value={item}
                       >
-                        <div className="flex items-center gap-2">
-                          <HugeiconsIcon
-                            className="opacity-80"
-                            icon={LabelIcon}
-                            strokeWidth={2}
-                          />
-                          <span>{item.label}</span>
-                        </div>
+                        <LabeledItem label={item.label} />
                       </ComboboxItem>
                     )}
                   </ComboboxCollection>
