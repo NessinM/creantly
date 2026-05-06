@@ -110,7 +110,7 @@ Async search: use `filter={null}`, control `value`/`onValueChange`, and provide 
 
 Form integration: place `Autocomplete` inside `Field name="..."` with `FieldLabel`/`FieldError`.
 
-### More examples
+### More projects
 
 See `p-autocomplete-1` through `p-autocomplete-15` for sizes, matching behavior, groups, limited results, async, form integration, and pill input patterns.
 

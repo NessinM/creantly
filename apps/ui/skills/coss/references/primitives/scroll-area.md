@@ -66,7 +66,7 @@ Scroll fade edges:
 
 `ScrollArea` always renders both scrollbars internally -- horizontal scroll is driven by inner content width exceeding the container, not by a prop. Also supports `scrollbarGutter` for reserving scrollbar space.
 
-### More examples
+### More projects
 
 See `p-scroll-area-1` through `p-scroll-area-5` for vertical, horizontal, both axes, fade, and gutter patterns.
 

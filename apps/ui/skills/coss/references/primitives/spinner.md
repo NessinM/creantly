@@ -56,7 +56,7 @@ Standalone spinner with label:
 
 Prefer button built-in loading UI where available over ad-hoc spinner wrappers.
 
-### More examples
+### More projects
 
 See `p-button-18` and `p-input-12` for spinner-in-button and spinner-in-input-group patterns.
 

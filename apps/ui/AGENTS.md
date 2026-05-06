@@ -13,7 +13,7 @@ This guide provides comprehensive instructions for creating new particle compone
 - `{N}`: Sequential number within the category (e.g., `1`, `2`, `3`)
 - Use hyphens for multi-word components (e.g., `alert-dialog`, `input-group`, `number-field`)
 
-**Examples:**
+**Projects:**
 - `p-button-1.tsx` (first button particle)
 - `p-input-group-15.tsx` (fifteenth input group particle)
 - `p-alert-dialog-2.tsx` (second alert dialog particle)
@@ -60,7 +60,7 @@ export default function Particle() {
 - Components using controlled props (state managed externally)
 - Simple compositions of UI primitives
 
-**Examples:**
+**Projects:**
 
 ```tsx
 // ✅ Needs "use client" - uses useState
@@ -1015,7 +1015,7 @@ const handleSubmit = async () => {
 # 1. Find existing particles in category
 ls apps/ui/registry/default/particles/p-button-*.tsx
 
-# 2. Read a few examples
+# 2. Read a few projects
 cat apps/ui/registry/default/particles/p-button-1.tsx
 cat apps/ui/registry/default/particles/p-button-18.tsx
 

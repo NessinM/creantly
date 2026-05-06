@@ -92,7 +92,7 @@ Sheet from the right side with form:
 
 Side options: `top`, `right`, `bottom`, `left`.
 
-### More examples
+### More projects
 
 See `p-sheet-1` through `p-sheet-3` for inset and side sheet patterns.
 

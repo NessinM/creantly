@@ -83,7 +83,7 @@ const [value, setValue] = useState("default")
 </RadioGroup>
 ```
 
-### More examples
+### More projects
 
 See `p-radio-group-1` through `p-radio-group-5` for disabled, description, card-style, and form integration patterns.
 

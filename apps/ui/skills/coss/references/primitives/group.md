@@ -62,7 +62,7 @@ Group with input and button:
 
 Sizes: `sm`, `default`, `lg`. Orientation: vertical via `orientation="vertical"`.
 
-### More examples
+### More projects
 
 See `p-group-1` through `p-group-9` for input, sizes, disabled, vertical, and labeled text patterns.
 

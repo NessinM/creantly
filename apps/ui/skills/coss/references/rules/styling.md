@@ -1,6 +1,6 @@
 # Styling Rules (creantly)
 
-Use this guide when writing or updating creantly primitives, particles, and docs examples.
+Use this guide when writing or updating creantly primitives, particles, and docs projects.
 
 ## Core Rules
 
@@ -11,7 +11,7 @@ Use this guide when writing or updating creantly primitives, particles, and docs
 - Use `cn()` for conditional class composition.
 - Avoid redundant classes that defaults already cover (for example `border-border` when border color is already inherited).
 - Before adding layout classes, check whether the target part already provides that layout.
-- Use Tailwind v4 syntax and conventions in creantly examples and snippets.
+- Use Tailwind v4 syntax and conventions in creantly projects and snippets.
 - **Do not replace `--alpha()` with `color-mix()` or `rgba()`.** `--alpha()` is a valid Tailwind v4 theme function used throughout creantly token definitions (e.g. `--alpha(var(--color-black) / 8%)`). It is processed by Tailwind at build time — it is not invalid CSS.
 
 ## creantly-specific Expectations

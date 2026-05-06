@@ -51,7 +51,7 @@ Range slider (two thumbs):
 <Slider aria-label="Price range" defaultValue={[20, 80]} min={0} max={100} />
 ```
 
-### More examples
+### More projects
 
 See `p-slider-1` through `p-slider-5` for label, range, vertical, and form integration patterns.
 

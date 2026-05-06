@@ -18,13 +18,13 @@ Use this skill to:
 - pick the right creantly primitive(s) for a UI task
 - write correct creantly usage code (imports, composition, props)
 - avoid common migration mistakes from shadcn/Radix assumptions
-- reference particle examples to produce practical, production-like patterns
+- reference particle projects to produce practical, production-like patterns
 
 ## Source of truth
 
 - creantly components docs: `apps/ui/content/docs/components/*.mdx`
   - `https://github.com/NessinM/creantly/tree/main/apps/ui/content/docs/components`
-- creantly particle examples: `apps/ui/registry/default/particles/p-*.tsx`
+- creantly particle projects: `apps/ui/registry/default/particles/p-*.tsx`
   - `https://github.com/NessinM/creantly/tree/main/apps/ui/registry/default/particles`
 - creantly particles catalog: `https://creantly.com/ui/particles`
 - docs map for agents: `https://creantly.com/ui/llms.txt`
@@ -39,9 +39,9 @@ Use this skill to:
 1. Use existing primitives and particles first before inventing custom markup.
 2. Prefer composition over custom behavior reimplementation.
 3. Follow creantly naming and APIs from docs exactly.
-4. Keep examples accessible and production-realistic.
+4. Keep projects accessible and production-realistic.
 5. Prefer concise code that mirrors creantly docs/particles conventions.
-6. Assume Tailwind CSS v4 conventions in creantly examples and setup guidance.
+6. Assume Tailwind CSS v4 conventions in creantly projects and setup guidance.
 
 ## Critical usage rules
 
@@ -95,7 +95,7 @@ Quick manual pattern:
 
 ## Primitive Guidance
 
-Every primitive has a reference guide at `./references/primitives/<name>.md` with imports, minimal patterns, inline code examples, pitfalls, and particle references. Use the component registry to find the right file.
+Every primitive has a reference guide at `./references/primitives/<name>.md` with imports, minimal patterns, inline code projects, pitfalls, and particle references. Use the component registry to find the right file.
 
 High-risk primitives (read these guides first -- they have the most composition gotchas):
 

@@ -65,7 +65,7 @@ Preview card with rich content:
 </PreviewCard>
 ```
 
-### More examples
+### More projects
 
 See `p-preview-card-1` for the core pattern.
 

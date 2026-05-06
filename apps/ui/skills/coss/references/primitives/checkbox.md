@@ -77,7 +77,7 @@ const id = useId()
 </div>
 ```
 
-### More examples
+### More projects
 
 - disabled: `p-checkbox-2`
 - with description: `p-checkbox-3`

@@ -49,7 +49,7 @@ Card skeleton composition (match the final layout geometry):
 Shape matching: mirror final text/image/button geometry to reduce content shift.
 State handoff: remove skeleton immediately when data is ready to avoid double-render.
 
-### More examples
+### More projects
 
 - skeleton-only layout: `p-skeleton-2`
 - full loading-to-loaded flow: `p-skeleton-1`

@@ -67,7 +67,7 @@ Disabled switch:
 </Label>
 ```
 
-### More examples
+### More projects
 
 - disabled: `p-switch-2`
 - with description: `p-switch-3`

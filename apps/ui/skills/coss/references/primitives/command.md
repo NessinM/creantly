@@ -105,7 +105,7 @@ Command with grouped sections:
 
 Use `CommandDialog` + `CommandDialogTrigger` + `CommandDialogPopup` to wrap `Command` in a dialog overlay. Use controlled `open`/`onOpenChange` state for keyboard-shortcut activation.
 
-### More examples
+### More projects
 
 See `p-command-1` and `p-command-2` for dialog palette and grouped action patterns.
 

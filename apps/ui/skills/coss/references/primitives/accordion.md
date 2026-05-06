@@ -72,7 +72,7 @@ const [value, setValue] = useState<string[]>(["item-1"])
 
 Each `AccordionItem` needs a stable `value`; trigger and panel must be children of the same item.
 
-### More examples
+### More projects
 
 See `p-accordion-1` through `p-accordion-4` for mapped items, single-open, multiple-open, and controlled patterns.
 

@@ -91,7 +91,7 @@ Combobox with label in a Field:
 
 Sizes: `sm`, `default`, `lg` on `ComboboxInput`.
 
-### More examples
+### More projects
 
 See `p-combobox-1` through `p-combobox-9` for sizes, label, auto-highlight, clear button, groups, and multiple selection.
 

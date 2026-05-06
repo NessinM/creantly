@@ -78,7 +78,7 @@ Grouped tooltips (shared delay/provider):
 </TooltipProvider>
 ```
 
-### More examples
+### More projects
 
 See `p-tooltip-1` through `p-tooltip-3` for basic, grouped, and animated tooltip patterns.
 

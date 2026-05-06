@@ -67,7 +67,7 @@ Frame with header actions:
 
 Use `Frame` to normalize border/radius around heterogeneous inner content (tables, lists, cards).
 
-### More examples
+### More projects
 
 See `p-frame-1` through `p-frame-3` for basic and separated panel patterns.
 

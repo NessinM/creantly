@@ -69,7 +69,7 @@ Underline variant:
 </Tabs>
 ```
 
-### More examples
+### More projects
 
 - underline variant: `p-tabs-2`
 - vertical orientation: `p-tabs-3`

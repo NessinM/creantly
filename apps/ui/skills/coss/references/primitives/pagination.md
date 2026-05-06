@@ -83,7 +83,7 @@ Full pagination with active page:
 </Pagination>
 ```
 
-### More examples
+### More projects
 
 See `p-pagination-1` through `p-pagination-3` for various pagination layouts.
 

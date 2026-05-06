@@ -58,7 +58,7 @@ Minimal meter without label:
 <Meter value={40} aria-label="Progress" />
 ```
 
-### More examples
+### More projects
 
 See `p-meter-1` through `p-meter-4` for label, formatted value, and range patterns.
 

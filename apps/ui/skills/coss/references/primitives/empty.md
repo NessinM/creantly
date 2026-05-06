@@ -73,7 +73,7 @@ Empty state with icon and action:
 
 Always include an actionable next step (button, link) in `EmptyContent`.
 
-### More examples
+### More projects
 
 See `p-empty-1` for the core pattern.
 

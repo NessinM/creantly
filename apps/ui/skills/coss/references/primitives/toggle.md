@@ -64,7 +64,7 @@ ToggleGroup with icon toggles:
 
 Variants: `default`, `outline`. Sizes: `sm`, `default`, `lg`.
 
-### More examples
+### More projects
 
 - outline: `p-toggle-2`
 - with icon: `p-toggle-3`

@@ -63,7 +63,7 @@ Single key shortcut in a button:
 </Button>
 ```
 
-### More examples
+### More projects
 
 - input group integration: `p-input-group-11`
 

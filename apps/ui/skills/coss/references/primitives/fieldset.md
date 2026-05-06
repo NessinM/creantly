@@ -53,7 +53,7 @@ Fieldset grouping related fields:
 
 Always include `FieldsetLegend` as the accessible group heading.
 
-### More examples
+### More projects
 
 See `p-fieldset-1` for the core pattern.
 

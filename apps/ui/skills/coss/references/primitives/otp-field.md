@@ -72,7 +72,7 @@ Digit-only SMS-style codes use Base UI’s default `validationType` (`numeric`) 
 
 Ensure slot count matches `length`.
 
-### More examples
+### More projects
 
 See `p-otp-field-1` through `p-otp-field-4` and `p-otp-field-6` through `p-otp-field-10` for sizes, separators, label, custom sanitization, auto-validation, alphanumeric codes, placeholder hints, and masked entry.
 

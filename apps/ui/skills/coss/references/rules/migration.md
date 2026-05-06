@@ -12,13 +12,13 @@ creantly is close to shadcn ergonomically, but its primitives and composition mo
 - Verify trigger and popup composition from creantly docs before coding.
 - Apply `asChild` -> `render` only on creantly parts that explicitly support `render`.
 - Prefer creantly component names and exports as documented (`DialogPopup`, `MenuPopup`, `SelectPopup`, etc.).
-- Some legacy aliases may exist, but primary creantly names should be preferred in new examples.
+- Some legacy aliases may exist, but primary creantly names should be preferred in new projects.
 - Prefer styled creantly exports by default (for example `Slider`, `SliderValue`) and use `*Primitive` only for advanced/custom composition.
 - When only Base UI helpers are needed (`useRender`, `mergeProps`, `CSPProvider`, `DirectionProvider`), prefer `@creantly/ui/base-ui/*` re-exports over direct `@base-ui/react` dependency.
 - For Select migration, replace children-only option derivation with an `items`-first pattern where possible, then map options consistently in `SelectPopup`.
 - For OTP fields, migrate off the `input-otp` package to creantly `@creantly/otp-field`: rename components (`OTPField`, `OTPFieldInput`, `OTPFieldSeparator`), use `length` and `onValueChange`, and drop `InputOTPGroup` / slot `index` (see example below).
 
-## Practical migration examples
+## Practical migration projects
 
 Use these snippets as fast conversion templates when migrating shadcn/Radix code.
 
@@ -168,6 +168,6 @@ For the full component registry, see `../component-registry.md`.
 
 ## Anti-patterns
 
-- Copy/paste shadcn examples and only change import path.
+- Copy/paste shadcn projects and only change import path.
 - Using undocumented props because they exist in other ecosystems.
 - Omitting required subcomponents in overlays/forms because the source snippet did.

@@ -117,7 +117,7 @@ Key composition rules:
 - Use `SidebarInset` for the main content area next to the sidebar.
 - `SidebarRail` adds a slim hover-to-expand rail in collapsed state.
 
-### More examples
+### More projects
 
 See `p-toolbar-1`, `p-breadcrumb-1`, `p-tabs-1`, `p-menu-1` for related app-shell patterns.
 

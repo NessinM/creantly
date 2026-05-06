@@ -60,7 +60,7 @@ Stacked avatar group:
 </div>
 ```
 
-### More examples
+### More projects
 
 See `p-avatar-1` through `p-avatar-5` for sizes, radii, fallback-only, and group patterns.
 

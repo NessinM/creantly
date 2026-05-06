@@ -83,7 +83,7 @@ function main() {
   lines.push("---");
   lines.push("name: creantly-particles");
   lines.push(
-    "description: Index of all CREANTLY UI particle examples. Use when implementing UI features to find copy-paste-ready component patterns built on creantly primitives. Each particle has a description and a JSON URL for easy installation.",
+    "description: Index of all CREANTLY UI particle projects. Use when implementing UI features to find copy-paste-ready component patterns built on creantly primitives. Each particle has a description and a JSON URL for easy installation.",
   );
   lines.push(
     "compatibility: Requires creantly UI components installed in the project.",

@@ -84,7 +84,7 @@ Input with interactive button addon:
 
 `InputGroupAddon` must be after `InputGroupInput`/`InputGroupTextarea` in DOM order for proper focus behavior.
 
-### More examples
+### More projects
 
 See `p-input-group-1` through `p-input-group-29` for icons, text prefixes, interactive addons, textarea layouts, and stateful patterns.
 

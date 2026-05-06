@@ -80,7 +80,7 @@ Number field with scrub area (drag to adjust):
 
 Sizes: `sm`, `default`, `lg` on `NumberFieldGroup`.
 
-### More examples
+### More projects
 
 See `p-number-field-1` through `p-number-field-9` for sizes, disabled, scrub, range, formatted value, and step patterns.
 

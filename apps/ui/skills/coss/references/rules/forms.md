@@ -1,6 +1,6 @@
 # Forms and Inputs Rules (creantly)
 
-Use this when implementing fields, input groups, validation states, and form examples.
+Use this when implementing fields, input groups, validation states, and form projects.
 
 ## Core Rules
 

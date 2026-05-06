@@ -84,7 +84,7 @@ Composite approach (manual `Spinner` + `disabled`):
 
 Prefer the `loading` prop for typical async actions. Use the composite approach when you need custom spinner placement or label.
 
-### More examples
+### More projects
 
 - default: `p-button-1`
 - outline: `p-button-2`

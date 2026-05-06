@@ -56,7 +56,7 @@ Progress with label and value display:
 Determinate progress: bind a numeric `value` (0-100) for known completion states.
 Indeterminate loading: omit `value` or pass `null` when progress cannot be measured.
 
-### More examples
+### More projects
 
 - with label and value: `p-progress-2`
 - with formatted value: `p-progress-3`

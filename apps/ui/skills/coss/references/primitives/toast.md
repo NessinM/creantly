@@ -113,7 +113,7 @@ anchoredToastManager.add({
 - Forgetting provider setup before calling managers.
 - Using anchored toasts without a valid `anchor`.
 - Assuming tooltip-style anchored toasts show full content (only title is shown with `tooltipStyle`).
-- Copy/pasting Sonner examples (`toast(...)` options shape) without adapting to `toastManager` / `anchoredToastManager`.
+- Copy/pasting Sonner projects (`toast(...)` options shape) without adapting to `toastManager` / `anchoredToastManager`.
 
 ## Useful particle references
 

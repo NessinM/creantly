@@ -98,7 +98,7 @@ Drawer with handle:
 
 Responsive drawer + dialog (drawer on mobile, dialog on desktop): see `p-drawer-12`.
 
-### More examples
+### More projects
 
 See `p-drawer-1` through `p-drawer-13` for inset, straight, scrollable, nested, snap points, mobile menu, and responsive patterns.
 

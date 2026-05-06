@@ -20,7 +20,7 @@ Particles use the format: `p-{component}-{N}.tsx`
 - **component**: The component name (e.g., `button`, `input`, `alert-dialog`, `input-group`)
 - **N**: Progressive number within the category (e.g., `1`, `2`, `3`)
 
-**Examples:**
+**Projects:**
 
 - `p-button-1.tsx` (first button particle)
 - `p-input-2.tsx` (second input particle)

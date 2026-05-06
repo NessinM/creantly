@@ -51,7 +51,7 @@ Sizes: `sm`, `default`, `lg` on `Textarea`.
 
 `Textarea` wraps Base UI `Field.Control` internally, so it works as a form control directly inside `Field`.
 
-### More examples
+### More projects
 
 See `p-textarea-1` through `p-textarea-6` for sizes, disabled, label, and form integration patterns.
 

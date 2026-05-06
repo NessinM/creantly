@@ -76,7 +76,7 @@ Custom separator:
 </BreadcrumbSeparator>
 ```
 
-### More examples
+### More projects
 
 See `p-breadcrumb-1` and `p-breadcrumb-2` for default and custom separator patterns.
 

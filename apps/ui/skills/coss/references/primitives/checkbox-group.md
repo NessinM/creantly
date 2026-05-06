@@ -76,7 +76,7 @@ const [value, setValue] = useState(["next"])
 
 For form-bound groups, use `Field` + `Fieldset` so legend, labels, and errors are grouped correctly.
 
-### More examples
+### More projects
 
 See `p-checkbox-group-1` through `p-checkbox-group-5` for disabled items, parent checkbox, nested, and form patterns.
 

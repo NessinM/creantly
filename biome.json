@@ -106,7 +106,7 @@
         "apps/ui/registry/default/hooks/**",
         "apps/ui/registry/default/lib/**",
         "apps/ui/registry/default/ui/**",
-        "apps/examples/calcom/components/**"
+        "apps/projects/calcom/components/**"
       ],
       "linter": {
         "rules": {

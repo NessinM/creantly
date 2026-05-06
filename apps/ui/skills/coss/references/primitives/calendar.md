@@ -49,7 +49,7 @@ const [range, setRange] = useState<DateRange | undefined>()
 <Calendar mode="range" selected={range} onSelect={setRange} />
 ```
 
-### More examples
+### More projects
 
 See `p-calendar-1` through `p-calendar-6` for single, range, dropdown navigation, and month/year select patterns.
 

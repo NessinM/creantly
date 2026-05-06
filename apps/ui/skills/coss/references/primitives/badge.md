@@ -64,7 +64,7 @@ Badge inside a button (use negative margin for alignment):
 </Button>
 ```
 
-### More examples
+### More projects
 
 See `p-badge-1` through `p-badge-9` for all variant/size combinations.
 

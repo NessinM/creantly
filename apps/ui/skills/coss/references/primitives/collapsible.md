@@ -55,7 +55,7 @@ const [open, setOpen] = useState(false)
 </Collapsible>
 ```
 
-### More examples
+### More projects
 
 See `p-collapsible-1` for the core pattern.
 

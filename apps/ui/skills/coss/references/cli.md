@@ -36,7 +36,7 @@ npx shadcn@latest add @creantly/ui @creantly/colors-neutral
 shadcn add @creantly/<component>
 ```
 
-Examples:
+Projects:
 
 ```bash
 npx shadcn@latest add @creantly/dialog

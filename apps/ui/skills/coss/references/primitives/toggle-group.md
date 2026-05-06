@@ -66,7 +66,7 @@ const [value, setValue] = useState(["bold"])
 </ToggleGroup>
 ```
 
-### More examples
+### More projects
 
 See `p-toggle-group-1` through `p-toggle-group-9` for sizes, outline, vertical, disabled, multiple, and tooltip patterns.
 

@@ -1,6 +1,6 @@
 ---
 name: creantly-particles
-description: Index of all CREANTLY UI particle examples. Use when implementing UI features to find copy-paste-ready component patterns built on creantly primitives. Each particle has a description and a JSON URL for easy installation.
+description: Index of all CREANTLY UI particle projects. Use when implementing UI features to find copy-paste-ready component patterns built on creantly primitives. Each particle has a description and a JSON URL for easy installation.
 compatibility: Requires creantly UI components installed in the project.
 license: MIT
 metadata:

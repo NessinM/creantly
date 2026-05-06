@@ -70,7 +70,7 @@ Alert with action buttons (use `AlertAction`):
 </Alert>
 ```
 
-### More examples
+### More projects
 
 See `p-alert-1` through `p-alert-7` for all variants and action patterns.
 

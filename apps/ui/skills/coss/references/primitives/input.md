@@ -59,7 +59,7 @@ Input with addon (InputGroup):
 
 Sizes: `sm`, `default`, `lg`. Always specify `type` explicitly.
 
-### More examples
+### More projects
 
 - small size: `p-input-2`
 - large size: `p-input-3`

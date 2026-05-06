@@ -53,7 +53,7 @@ Vertical separator inline:
 </div>
 ```
 
-### More examples
+### More projects
 
 See `p-separator-1` for the core pattern. Also used within `p-menu-1`, `p-group-1`, and `p-input-group-7`.
 

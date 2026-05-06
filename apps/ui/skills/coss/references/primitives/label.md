@@ -55,7 +55,7 @@ Label wrapping a checkbox:
 
 Prefer `FieldLabel` within `Field` for validation-aware forms.
 
-### More examples
+### More projects
 
 See `p-field-1`, `p-input-1`, `p-checkbox-1` for label-in-form patterns.
 

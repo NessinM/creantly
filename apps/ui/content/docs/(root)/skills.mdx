@@ -28,7 +28,7 @@ The skill covers the full creantly ui surface:
 
 ### Component Knowledge
 
-Reference guides for all primitives — imports, minimal patterns, inline code examples, composition rules, and common pitfalls. The assistant knows when to use Dialog vs Sheet vs Drawer, how to compose trigger-based overlays, and how to structure forms with Field.
+Reference guides for all primitives — imports, minimal patterns, inline code projects, composition rules, and common pitfalls. The assistant knows when to use Dialog vs Sheet vs Drawer, how to compose trigger-based overlays, and how to structure forms with Field.
 
 ### Styling Conventions
 
@@ -42,16 +42,16 @@ Rules for migrating from shadcn/Radix to creantly/Base UI — `asChild` to `rend
 
 Full reference for installing components via the shadcn CLI, discovery fallbacks, and manual install paths.
 
-### Particle Examples
+### Particle Projects
 
-The skill references the particle catalog — real-world composition examples for every primitive — so the assistant can produce production-realistic code, not just minimal stubs.
+The skill references the particle catalog — real-world composition projects for every primitive — so the assistant can produce production-realistic code, not just minimal stubs.
 
 ## How It Works
 
 1. **Skill activation** — Your AI agent detects the installed skill files in your project.
 2. **Progressive loading** — The root `SKILL.md` provides core rules and a component registry index. Detailed per-component guides and rule references are loaded on demand when the task requires them.
 3. **Pattern enforcement** — The assistant follows creantly composition rules: `render` prop for trigger composition, `DialogHeader`/`DialogPanel`/`DialogFooter` section structure, `variant="ghost"` for cancel buttons, and correct Base UI APIs.
-4. **Example-driven output** — Before generating code, the assistant consults particle examples to match real creantly patterns.
+4. **Example-driven output** — Before generating code, the assistant consults particle projects to match real creantly patterns.
 
 ## Supported Agents
 

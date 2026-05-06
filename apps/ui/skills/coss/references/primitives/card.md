@@ -70,7 +70,7 @@ Card with form content:
 
 Keep `CardHeader`, `CardPanel`, and `CardFooter` as direct children of `Card` to preserve built-in spacing and layout.
 
-### More examples
+### More projects
 
 See `p-card-1` through `p-card-8` for various card compositions.
 
